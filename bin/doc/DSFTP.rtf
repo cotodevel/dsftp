@@ -1,0 +1,388 @@
+{\rtf1\mac\ansicpg10000\cocoartf824\cocoasubrtf440
+{\fonttbl\f0\fswiss\fcharset77 Helvetica-Bold;\f1\fswiss\fcharset77 Helvetica;\f2\fswiss\fcharset77 Helvetica-BoldOblique;
+\f3\fmodern\fcharset77 CourierNewPS-BoldMT;\f4\fmodern\fcharset77 Courier;}
+{\colortbl;\red255\green255\blue255;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc2\leveljcn2\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid0\'02\'05.;}{\levelnumbers\'01;}}{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc2\leveljcn2\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid0\'02\'05.;}{\levelnumbers\'01;}}{\listname ;}\listid2}
+{\list\listtemplateid3\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc2\leveljcn2\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid0\'02\'05.;}{\levelnumbers\'01;}}{\listname ;}\listid3}
+{\list\listtemplateid4\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc2\leveljcn2\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid0\'02\'05.;}{\levelnumbers\'01;}}{\listname ;}\listid4}
+{\list\listtemplateid5\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc2\leveljcn2\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid0\'02\'05.;}{\levelnumbers\'01;}}{\listname ;}\listid5}
+{\list\listtemplateid6\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc2\leveljcn2\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid0\'02\'05.;}{\levelnumbers\'01;}}{\listname ;}\listid6}
+{\list\listtemplateid7\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc2\leveljcn2\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid0\'02\'05.;}{\levelnumbers\'01;}}{\listname ;}\listid7}
+{\list\listtemplateid8\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc2\leveljcn2\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid0\'02\'05.;}{\levelnumbers\'01;}}{\listlevel\levelnfc23\levelnfcn23\leveljc2\leveljcn2\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{hyphen\}}{\leveltext\leveltemplateid1\'02\'05.;}{\levelnumbers\'01;}}{\listname ;}\listid8}
+{\list\listtemplateid9\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc2\leveljcn2\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid0\'02\'05.;}{\levelnumbers\'01;}}{\listname ;}\listid9}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}{\listoverride\listid3\listoverridecount0\ls3}{\listoverride\listid4\listoverridecount0\ls4}{\listoverride\listid5\listoverridecount0\ls5}{\listoverride\listid6\listoverridecount0\ls6}{\listoverride\listid7\listoverridecount0\ls7}{\listoverride\listid8\listoverridecount0\ls8}{\listoverride\listid9\listoverridecount0\ls9}}
+\paperw11900\paperh16840\margl1440\margr1440\vieww13660\viewh15220\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\qc\pardirnatural
+
+\f0\b\fs36 \cf0  DSFTP: FTP server for the Nintendo DS\
+
+\f1\b0\fs26 \'a9 2006 Bj\'9arn Giesler <bjoern@giesler.de>
+\f0\b\fs36 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ql\qnatural\pardirnatural
+
+\f1\b0\fs24 \cf0 \
+This is a full-fledged FTP server and software component for the NDS, with the additional ability to boot .nds files directly from the FTP prompt (currently only tested on SuperCard CF and DS, but should work on most).\
+\
+DSFTP is a stand-alone program that you can use to run a FTP server on your DS. It is also a 
+\f0\b software component
+\f1\b0  that makes it easy for you to 
+\f0\b add an FTP server to your own program
+\f1\b0  with a couple lines of code. With this, you can speed up the build process radically, because you can upload the new version of your program 
+\f0\b to your own running program
+\f1\b0 , and reboot it immediately. This can even be automated via the command line. No swapping of flash cards ever again! Please refer to the Development section of this document or the reference documentation for a quick introduction.\
+\pard\tx220\tx720\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ql\qnatural\pardirnatural
+\cf0 \
+
+\f0\b\fs28 Changes\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ql\qnatural\pardirnatural
+
+\f1\b0\fs24 \cf0 Version 2.6:\
+\pard\tx220\tx720\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li720\fi-720\ql\qnatural\pardirnatural
+\ls1\ilvl0\cf0 {\listtext	\'a5	}Fixed hangs on some hardware combinations\
+{\listtext	\'a5	}Fixed bug which caused directory contents not to be reported correctly\
+{\listtext	\'a5	}Introduced new config option 
+\f0\b transferblocksize
+\f1\b0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ql\qnatural\pardirnatural
+\cf0 \
+Version 2.5:\
+\pard\tx220\tx720\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li720\fi-720\ql\qnatural\pardirnatural
+\ls2\ilvl0\cf0 {\listtext	\'a5	}Upgraded to devkitpro 21, so linking to libDSFTP should	 work now\
+{\listtext	\'a5	}Uses DSWifi 0.34, so people with newer DS Lites should have no problems\
+{\listtext	\'a5	}Uses libfat instead of gba_nds_fat, which should be more stable\
+{\listtext	\'a5	}Uses DSGUI for graphics and file-system interface\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ql\qnatural\pardirnatural
+\cf0 \
+Version 2.4:\
+The FAT driver has been upgraded to chishm's DLDI file system driver interface. The precompiled version comes with Supercard CF driver installed. 
+\f0\b No other interfaces will be supported any more.
+\f1\b0  If you have a different flash card, please patch the DSFTP binary yourself. \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ql\qnatural\pardirnatural
+
+\f0\b\fs28 \cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ql\qnatural\pardirnatural
+
+\f1\b0\fs24 \cf0 Version 2.3:\
+\pard\tx220\tx720\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li720\fi-720\ql\qnatural\pardirnatural
+\ls3\ilvl0\cf0 {\listtext	\'a5	}UNZP added (submitted by Bertrand Augereau)\
+{\listtext	\'a5	}DS->PC file transfer speeded up a lot (patch to DSWifi submitted by masscat)\
+{\listtext	\'a5	}Linked with Devkit R18 again (fixes some showstopper bugs)\
+{\listtext	\'a5	}More bugfixes\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ql\qnatural\pardirnatural
+
+\f0\b\fs28 \cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ql\qnatural\pardirnatural
+
+\f1\b0\fs24 \cf0 Version 2.2:\
+\pard\tx220\tx720\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li720\fi-720\ql\qnatural\pardirnatural
+\ls4\ilvl0\cf0 {\listtext	\'a5	}Glaring bug fixed that caused GBAMP not to work anymore\
+{\listtext	\'a5	}Booting verified on SuperCard and GBAMP now\
+{\listtext	\'a5	}CDUP command supported\
+{\listtext	\'a5	}More bugfixes\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ql\qnatural\pardirnatural
+
+\f0\b\fs28 \cf0 \
+\pard\tx220\tx720\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li720\fi-720\ql\qnatural\pardirnatural
+\ls5\ilvl0
+\f1\b0\fs24 \cf0 Version 2.1:\
+\pard\tx220\tx720\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li720\fi-720\ql\qnatural\pardirnatural
+\ls6\ilvl0\cf0 {\listtext	\'a5	}Unified bootloading should now support most cards\
+{\listtext	\'a5	}Auto-generated user & pass if none specified\
+{\listtext	\'a5	}More bugfixes\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ql\qnatural\pardirnatural
+\cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ql\qnatural\pardirnatural
+
+\f2\i\b\fs36 \cf0 Using the Stand-alone Server\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ql\qnatural\pardirnatural
+
+\f1\i0\b0\fs24 \cf0 This section describes how to setup, configure and use the stand-alone DSFTP server.
+\f2\i\b\fs36 \
+
+\f1\i0\b0\fs24 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ql\qnatural\pardirnatural
+
+\f0\b\fs28 \cf0 Configuration\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ql\qnatural\pardirnatural
+
+\f1\b0\fs24 \cf0 DSFTP reads its settings from a configuration file, which can exist at 
+\f3\b /data/settings/ftp.conf
+\f1\b0 . No, there is no alternative path and no way to specify one.\
+
+\f0\b Note:
+\f1\b0  This file is not strictly necessary; if it isn't found, DSFTP will create a default user with a random password (which will be shown on the screen). So if you think you're not up to the task of creating a configuration file, don't worry.\
+\
+Here is an example of a configuration file:\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li1140\ql\qnatural\pardirnatural
+
+\f4 \cf0 motd /ftp/motd.txt\
+logfile /data/logs/ftp.log\
+loglevel 4\
+timeout 60\
+transferblocksize 4000\
+portrangestart 9000\
+portrangeend 9999\
+\
+screensaver 30\
+wakeonlog false\
+\
+user bjoern\
+	pass whatever\
+	root /\
+	home /\
+	write true\
+	boot true\
+end user\
+\
+user anonymous\
+	root /ftp/anonymous\
+	write false\
+end user\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ql\qnatural\pardirnatural
+
+\f1 \cf0 \
+Whitespace in the configuration file is ignored (the indents in the example file are purely cosmetic), as are empty lines and lines starting with "#". The following settings are valid:\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li560\ql\qnatural\pardirnatural
+
+\f4 \cf0 motd FILE		\
+
+\f1 Defines a file that contains the message of the day, which will be printed on logon.\
+\
+
+\f4 logfile FILE\
+
+\f1 Defines the name of a file to store log messages in.\
+\
+
+\f4 loglevel LEVEL\
+
+\f1 Only messages with a loglevel below LEVEL will be printed / logged to file. LEVEL ranges from 0 (critical) to 5 (informational).\
+\
+
+\f4 masquerade NAME\
+
+\f1 Specifies that the server masquerades as the host NAME. This is very useful if the server is behind a NAT gateway, and its actual IP address is not visible to the world. In this case, for clients using PASV instead of EPSV for the passive mode, the reply to PASV will contain the IP address for NAME, not the actual server's IP. \
+
+\f0\b Note: Do not
+\f1\b0  use this if you're not behind a NAT gateway and the server is not actually reachable under the given name. It won't work.\
+
+\f4 \
+timeout SECONDS\
+
+\f1 Specifies that the server will close the data connection after the given period of inactivity. Default is 60 seconds.\
+\
+
+\f4 listen PORT\
+
+\f1 	Tells the server to listen to PORT. If this is not given, the standard FTP port 21 will be used.\
+\
+
+\f4 portrangestart NUM / portrangeend NUM\
+
+\f1 	Specifies what port range to use for passive connections. If these aren't given, the portrange goes from 1024 to INT_MAX.\
+\
+
+\f4 screensaver SECONDS\
+
+\f1 	Specifies the timeout for the screen saver. Can also be the string "off", which disables the screen saver altogether. Default is 60 seconds.\
+\
+
+\f4 wakeonlog BOOL\
+
+\f1 	If this is "true", the screensaver will wake up on every log entry. Default is true.\
+\
+
+\f4 transferblocksize NUM\
+
+\f1 	Transfer data in NUM-bytes sized chunks. Small values make for slower transfers, large values may cause hangs on some hardware. Minimum 512, maximum 8192, default is 4096.\
+\
+
+\f4 user NAME\
+
+\f1 Starts a new user block, which must be finished by "end user". Only users named by a user block will be accepted for login. \
+Exception to this rule: 
+\f0\b If no users at all are defined
+\f1\b0 , the stand-alone server defines a user named "default", with an automatically generated password which is displayed on the log output.\
+Settings valid in the user block are:\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li1120\ql\qnatural\pardirnatural
+
+\f4 \cf0 pass PASSWORD\
+
+\f1 Set the password for the current user, stored in cleartext. If the user's name is "anonymous", this will be ignored, and the user will be asked to specify his email address for a password.\
+\
+
+\f4 root DIR\
+
+\f1 Restrict the user to the directory hierarchy below DIR.\
+\
+
+\f4 home DIR\
+
+\f1 Upon logon, set the current directory to DIR (relative to the user's root dir).\
+\
+
+\f4 write BOOL\
+
+\f1 Grant the user write permission (including permission to rename and delete!) for everything below his root dir.\
+\
+
+\f4 boot BOOL\
+
+\f1 Grant the user permission to boot files and to power down the DS.\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ql\qnatural\pardirnatural
+\cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ql\qnatural\pardirnatural
+
+\f0\b\fs28 \cf0 Protocol Additions\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ql\qnatural\pardirnatural
+
+\f1\b0\fs24 \cf0 \
+DSFTP defines the additional command "BOOT", with the filename to be booted as an argument. Since the "BOOT" command is not in the official protocol, the FTP client doesn't know it. For text-based ftp, the "quote" prefix allows you to send it anyway, like this:\
+\
+	quote BOOT /mydsfile.nds\
+\
+Possible reply codes to the BOOT command are 530 (No permission to boot) and 250 (Booting file). Booting currently only works on Supercard CF. No checks are performed; it is legal to boot a ".txt" file, which will most likely crash your DS. On a successful boot, the data connection to the client is closed. Since booting doesn't return on success, a success message is always printed. If the file to boot could not be found, nothing is reported to the FTP client, but the connection remains intact.\
+\
+DSFTP defines the additional command "POWR", which can be used to power the DS off.  Possible reply codes are 530 (No permission to power off) and 250 (Powering off).\
+\
+DSFTP defines the additional command "UNZP" to uncompress files compressed with GNU zip. Usage is:\
+\
+	quote UNZP /zipfile.gz\
+\
+This will create a file named /zipfile (without the .gz ending). The original, zipped file will not be removed. Possible reply codes are 530 (Unable to open file or error unpacking) and 226 (unpacking succeeded.\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ql\qnatural\pardirnatural
+
+\f2\i\b\fs36 \cf0 Development
+\f1\i0\b0\fs24 \
+\
+This section describes how you can use libDSFTP to add an FTP server to your own applications. For all of these steps, you can use the included source for DSFTP as an example.\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ql\qnatural\pardirnatural
+
+\f0\b\fs28 \cf0 Preliminaries\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ql\qnatural\pardirnatural
+
+\f1\b0\fs24 \cf0 \
+Adding an FTP server is very easy. First, you should make sure that the following components are added to your build process. That means their include files must be accessible, and their libraries/object files must be linked with your program.\
+\
+\pard\tx220\tx720\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li720\fi-720\ql\qnatural\pardirnatural
+\ls7\ilvl0\cf0 {\listtext	\'a5	}gba_nds_fat (either chishm's FAT lib or REIN's)\
+{\listtext	\'a5	}dswifi\
+{\listtext	\'a5	}libDSFTP\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ql\qnatural\pardirnatural
+\cf0 \
+Then, you initialize the Wifi and FAT libraries as usual. Please refer to their respective examples for info on how to do it, or to the DSFTP source.\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ql\qnatural\pardirnatural
+
+\f0\b\fs28 \cf0 Creating the server\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ql\qnatural\pardirnatural
+
+\f1\b0\fs24 \cf0 \
+Next, you create an instance of BFTPServer somewhere in your program, like so:\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ql\qnatural\pardirnatural
+
+\f4 \cf0 	BFTPServer server;\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ql\qnatural\pardirnatural
+
+\f1 \cf0 \
+If you want to, you can also create an instance of BFTPConfigurator to configure the server. This is not mandatory, but it allows you to configure the FTP server via config file. This would look as follows.\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ql\qnatural\pardirnatural
+
+\f4 \cf0 	BFTPConfigurator configurator(&server);\
+	configurator.configureFromFile("/data/settings/ftp.conf");\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ql\qnatural\pardirnatural
+
+\f1 \cf0 \
+...or wherever you want the config file to be.\
+\
+If you 
+\f0\b do not
+\f1\b0  use a BFTPConfigurator, you 
+\f0\b must
+\f1\b0  add users to the FTP server manually. Otherwise, you won't be able to log in. BFTPServer does 
+\f0\b not
+\f1\b0  define any fallback/backdoor users. The simplest way to add users is like this:\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ql\qnatural\pardirnatural
+
+\f4 \cf0 	server.addUser("myusername", "mypassword");\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ql\qnatural\pardirnatural
+
+\f1 \cf0 \
+Please refer to BFTPServer.h for other arguments to this command.\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ql\qnatural\pardirnatural
+
+\f0\b\fs28 \cf0 Letting it do its work\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ql\qnatural\pardirnatural
+
+\f1\b0\fs24 \cf0 \
+That's it, your FTP server is ready! Now, whenever your program is idle (e.g. from the main loop), you should let the server do its work, like this:\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ql\qnatural\pardirnatural
+
+\f4 \cf0 	server.handle();\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ql\qnatural\pardirnatural
+
+\f1 \cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ql\qnatural\pardirnatural
+
+\f0\b\fs28 \cf0 Wrapping it up\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ql\qnatural\pardirnatural
+
+\f1\b0\fs24 \cf0 \
+And that's all you have to do. All the code inside of a nice little mainloop function would look like this:\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ql\qnatural\pardirnatural
+
+\f4 \cf0 	void mainloop(void)\
+	\{\
+		BFTPServer server;\
+		BFTPConfigurator configurator(&server);\
+		configurator.configureFromFile("/data/settings/ftp.conf");\
+		while(true)\
+		\{\
+			server.handle();\
+			swiWaitForVBlank();\
+		\}\
+	\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ql\qnatural\pardirnatural
+
+\f1 \cf0 \
+Please refer to the source code of DSFTP and the header files of libDSFTP for other possible settings and features.\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ql\qnatural\pardirnatural
+
+\f0\b\fs28 \cf0 Known Bugs and Limitations\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ql\qnatural\pardirnatural
+
+\f1\b0\fs24 \cf0 \
+The following bugs and limitations are known at the time of writing:\
+\
+\pard\tx220\tx720\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li720\fi-720\ql\qnatural\pardirnatural
+\ls8\ilvl0\cf0 {\listtext	\'a5	}Booting only verified to work on Supercard CF and Supercard SD.\
+{\listtext	\'a5	}Performance tested using the following clients. Performance with other clients unknown, but should work.\
+\pard\tx940\tx1440\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li1440\fi-1440\ql\qnatural\pardirnatural
+\ls8\ilvl1\cf0 {\listtext	\uc0\u8259 	}command-line FTP on Mac/DOS\
+{\listtext	\uc0\u8259 	}RBrowser Lite on Mac\
+{\listtext	\uc0\u8259 	}MacOS X virtual FTP file system\
+{\listtext	\uc0\u8259 	}Firefox\
+{\listtext	\uc0\u8259 	}FileZilla\
+{\listtext	\uc0\u8259 	}FireFTP (Firefox plugin)\
+{\listtext	\uc0\u8259 	}WS_FTP\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ql\qnatural\pardirnatural
+\cf0 \
+\pard\tx220\tx720\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li720\fi-720\ql\qnatural\pardirnatural
+\ls9\ilvl0\cf0 If any bugs pop up, please send me the log output with a full description to bjoern@giesler.de. Thank you and have fun!\
+}
