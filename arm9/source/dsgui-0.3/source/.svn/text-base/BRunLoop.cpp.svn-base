@@ -1,0 +1,219 @@
+// BRunLoop.cpp (this is -*- C++ -*-)
+// 
+// \author: Bjoern Giesler <bjoern@giesler.de>
+// 
+// 
+// 
+// $Author: giesler $
+// $Locker$
+// $Revision$
+// $Date: 2002-08-19 10:41:28 +0200 (Mon, 19 Aug 2002) $
+
+/* system includes */
+/* (none) */
+
+/* my includes */
+#include "BGUI.h"
+#include "BRunLoop.h"
+
+void
+BRunLoop::addResponder(BResponder* responder)
+{
+  for(unsigned int i=0; i<_responders.size(); i++)
+    {
+      if(_responders[i] == responder)
+	return;
+    }
+  _responders.push_back(responder);
+}
+
+void
+BRunLoop::removeResponder(BResponder *responder)
+{
+  for(unsigned int i=0; i<_responders.size(); i++)
+    {
+      if(_responders[i] == responder)
+	_responders.erase(_responders.begin()+i);
+    }
+}
+
+void
+BRunLoop::addVBlankReceiver(VBlankReceiver *receiver)
+{
+  for(unsigned int i=0; i<_receivers.size(); i++)
+    {
+      if(_receivers[i] == receiver)
+	return;
+    }
+  _receivers.push_back(receiver);
+}
+
+void
+BRunLoop::removeVBlankReceiver(VBlankReceiver *receiver)
+{
+  for(unsigned int i=0; i<_receivers.size(); i++)
+    {
+      if(_receivers[i] == receiver)
+	_receivers.erase(_receivers.begin()+i);
+    }
+}
+
+void
+BRunLoop::addGlobalVBlankReceiver(VBlankReceiver *receiver)
+{
+  for(unsigned int i=0; i<_globalreceivers.size(); i++)
+    {
+      if(_globalreceivers[i] == receiver)
+	return;
+    }
+  _globalreceivers.push_back(receiver);
+}
+
+void
+BRunLoop::removeGlobalVBlankReceiver(VBlankReceiver *receiver)
+{
+  for(unsigned int i=0; i<_globalreceivers.size(); i++)
+    {
+      if(_globalreceivers[i] == receiver)
+	_globalreceivers.erase(_globalreceivers.begin()+i);
+    }
+}
+
+void
+BRunLoop::run()
+{
+  BRunLoop* oldcurrent = _current;
+  _current = this;
+  _shouldStop = false;
+
+  while(!_shouldStop)
+    {
+      handle();
+      swiWaitForVBlank();
+      for(unsigned int i=0; i<_receivers.size(); i++)
+	_receivers[i]->runloopReachedVBlank(this);
+      for(unsigned int i=0; i<_globalreceivers.size(); i++)
+	_globalreceivers[i]->runloopReachedVBlank(this);
+      BGUI::get()->repaint();
+    }
+
+  _current = oldcurrent;
+}
+
+void
+BRunLoop::stop()
+{
+  _shouldStop = true;
+}
+
+
+void
+BRunLoop::postEvent(const BEvent& event)
+{
+  const std::vector<BScreen*>& screens = BGUI::get()->screens();
+  
+  for(std::vector<BScreen*>::const_iterator iter = screens.begin();
+      iter != screens.end(); iter++)
+    (*iter)->handleEvent(event);
+
+  for(std::vector<BResponder*>::iterator iter = _responders.begin();
+      iter != _responders.end(); iter++)
+    (*iter)->handleEvent(event);
+}
+
+BRunLoop*
+BRunLoop::currentRunLoop()
+{
+  return _current;
+}
+
+
+void
+BRunLoop::handle()
+{
+  scanKeys();
+  uint32 tmpbuttons = keysHeld();
+
+  if(tmpbuttons != _buttons)
+    {
+      for(uint32 key = 1; key < BIT(14); key <<= 1)
+	{
+	  if((tmpbuttons & key) &&
+	     !(_buttons & key))
+	    {
+	      BEvent event;
+	      event.type = EVT_KEYUP;
+	      event.key.key = key;
+	      event.key.keysHeld = tmpbuttons;
+	      postEvent(event);
+	    }
+	  else if((_buttons & key) &&
+		  !(tmpbuttons & key))
+	    {
+	      BEvent event;
+	      event.type = EVT_KEYDOWN;
+	      event.key.key = key;
+	      event.key.keysHeld = tmpbuttons;
+	      postEvent(event);
+	    }
+	  else if((_buttons & key) &&
+		  (tmpbuttons & key))
+	    {
+	      BEvent event;
+	      event.type = EVT_KEYHELD;
+	      event.key.key = key;
+	      event.key.keysHeld = tmpbuttons;
+	      postEvent(event);
+	    }
+	}
+    }
+  _buttons = tmpbuttons;
+  
+  if(IPC->touchZ1 > 200)
+    {
+      touchPosition touchPos = touchReadXY();
+      
+      if(!_touchdown)
+	{
+	  BEvent event;
+	  event.type = EVT_TOUCHDOWN;
+	  event.touch.x = _touchx = touchPos.px;
+	  event.touch.y = _touchy = touchPos.py;
+	  _touchdown = true;
+	  postEvent(event);
+	}
+      else if(_touchx != touchPos.px ||
+	      _touchy != touchPos.py)
+	{
+	  BEvent event;
+	  event.type = EVT_TOUCHDRAG;
+	  event.touch.x = _touchx = touchPos.px;
+	  event.touch.y = _touchy = touchPos.py;
+	  postEvent(event);
+	}
+    }
+  else if(_touchdown)
+    {
+      BEvent event;
+      event.type = EVT_TOUCHUP;
+      event.touch.x = _touchx;
+      event.touch.y = _touchy;
+      postEvent(event);
+      _touchdown = false;
+    }
+}
+
+
+std::vector<BRunLoop::VBlankReceiver*> BRunLoop::_globalreceivers;
+BRunLoop* BRunLoop::_current = NULL;
+
+uint32 BRunLoop::_buttons = 0;
+bool BRunLoop::_touchdown = false;
+int BRunLoop::_touchx = 0;
+int BRunLoop::_touchy = 0;
+
+#if BRunLoop_test
+int main(int argc, char **argv)
+{
+}
+#endif /* BRunLoop_test */

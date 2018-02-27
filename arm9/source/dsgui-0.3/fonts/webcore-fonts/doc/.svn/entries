@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="397"
+   name=""
+   committed-date="2007-12-29T09:16:18.023823Z"
+   url="svn+ssh://giesler.biz/Users/Shared/Subversion/Bjoern/NintendoDS/DSGUI/release-0.3/fonts/webcore-fonts/doc"
+   last-author="bjoern"
+   kind="dir"
+   revision="397"/>
+<entry
+   committed-rev="397"
+   name="orient.png"
+   text-time="2007-12-29T08:50:58.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="88f316305bee4d4bd25f855128393ff8"
+   last-author="bjoern"
+   kind="file"
+   prop-time="2007-12-29T08:50:58.000000Z"/>
+<entry
+   committed-rev="397"
+   name="kdeconf.png"
+   text-time="2007-12-29T08:50:59.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="d4e43cc1ac29861fad6c69b2b2c1770f"
+   last-author="bjoern"
+   kind="file"
+   prop-time="2007-12-29T08:50:58.000000Z"/>
+<entry
+   committed-rev="397"
+   name="msfonts-style-demo.png"
+   text-time="2007-12-29T08:50:59.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="2f45e52126c58e2ed9fec9a490423f25"
+   last-author="bjoern"
+   kind="file"
+   prop-time="2007-12-29T08:50:58.000000Z"/>
+<entry
+   committed-rev="397"
+   name="msfonts-style-demo.kwd"
+   text-time="2007-12-29T08:50:59.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="ed85d8911bb1330123533b618708257f"
+   last-author="bjoern"
+   kind="file"
+   prop-time="2007-12-29T08:50:58.000000Z"/>
+<entry
+   committed-rev="397"
+   name="mozconf.png"
+   text-time="2007-12-29T08:50:59.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="5e5c6c67997e811ff8d222aa8713252a"
+   last-author="bjoern"
+   kind="file"
+   prop-time="2007-12-29T08:50:58.000000Z"/>
+<entry
+   committed-rev="397"
+   name="msfonts-demo.png"
+   text-time="2007-12-29T08:50:59.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="118481a3a73b268e9e123a6299e43fbb"
+   last-author="bjoern"
+   kind="file"
+   prop-time="2007-12-29T08:50:58.000000Z"/>
+<entry
+   committed-rev="397"
+   name="hebrew.png"
+   text-time="2007-12-29T08:50:59.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="e3cf683d5a0616b47a8f8290317c824d"
+   last-author="bjoern"
+   kind="file"
+   prop-time="2007-12-29T08:50:58.000000Z"/>
+<entry
+   committed-rev="397"
+   name="msfonts-demo.kwd"
+   text-time="2007-12-29T08:50:59.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="f9db80184ee964e1f81d6744ab7264cf"
+   last-author="bjoern"
+   kind="file"
+   prop-time="2007-12-29T08:50:58.000000Z"/>
+<entry
+   committed-rev="397"
+   name="thumb-orient.png"
+   text-time="2007-12-29T08:50:59.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="8d039fcfbcba801efac9009d24014d4d"
+   last-author="bjoern"
+   kind="file"
+   prop-time="2007-12-29T08:50:58.000000Z"/>
+<entry
+   committed-rev="397"
+   name="konqconf.png"
+   text-time="2007-12-29T08:50:59.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="7bcac175a4a32ac72f994c8337c2349a"
+   last-author="bjoern"
+   kind="file"
+   prop-time="2007-12-29T08:50:58.000000Z"/>
+<entry
+   committed-rev="397"
+   name="index.html.new"
+   text-time="2007-12-29T08:50:59.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="d41d8cd98f00b204e9800998ecf8427e"
+   last-author="bjoern"
+   kind="file"
+   prop-time="2007-12-29T08:50:58.000000Z"/>
+<entry
+   committed-rev="397"
+   name="thumb-msfonts-style-demo.png"
+   text-time="2007-12-29T08:50:59.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="4e5f997142ce8914997290bfee6de8af"
+   last-author="bjoern"
+   kind="file"
+   prop-time="2007-12-29T08:50:58.000000Z"/>
+<entry
+   committed-rev="397"
+   name="index.html"
+   text-time="2007-12-29T08:50:59.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="04e71c1127d626c194de3469385f4852"
+   last-author="bjoern"
+   kind="file"
+   prop-time="2007-12-29T08:50:58.000000Z"/>
+<entry
+   committed-rev="397"
+   name="thumb-msfonts-demo.png"
+   text-time="2007-12-29T08:50:59.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="9da1a97457e3a685a6beccf1d6f1665e"
+   last-author="bjoern"
+   kind="file"
+   prop-time="2007-12-29T08:50:58.000000Z"/>
+<entry
+   committed-rev="397"
+   name="thumb-hebrew.png"
+   text-time="2007-12-29T08:50:59.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="3729860c207ba585cded3e2a5bb5ed6f"
+   last-author="bjoern"
+   kind="file"
+   prop-time="2007-12-29T08:50:58.000000Z"/>
+</wc-entries>

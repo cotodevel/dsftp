@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="397"
+   name=""
+   committed-date="2007-12-29T09:16:18.023823Z"
+   url="svn+ssh://giesler.biz/Users/Shared/Subversion/Bjoern/NintendoDS/DSGUI/release-0.3/source"
+   last-author="bjoern"
+   kind="dir"
+   uuid="cf5e7cae-daff-0310-bc88-a7f70dbeb50a"
+   revision="397"/>
+<entry
+   committed-rev="397"
+   name="BMessagebox.cpp"
+   text-time="2007-12-29T08:50:54.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="6013f96b362039156892f789a433405a"
+   last-author="bjoern"
+   kind="file"/>
+<entry
+   committed-rev="397"
+   name="BOnScreenKeyboard.cpp"
+   text-time="2007-12-29T08:50:54.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="bba98e779c5cacf162b7e3353b01a9b8"
+   last-author="bjoern"
+   kind="file"/>
+<entry
+   committed-rev="397"
+   name="BException.cpp"
+   text-time="2007-12-29T08:50:54.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="560545f73cf59d8b0e7a1e3de1dec2ff"
+   last-author="bjoern"
+   kind="file"/>
+<entry
+   committed-rev="397"
+   name="BRunLoop.cpp"
+   text-time="2007-12-29T08:50:54.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="c1fdd4f1a1cbcf9ea5860d3fdc62a9d1"
+   last-author="bjoern"
+   kind="file"/>
+<entry
+   committed-rev="397"
+   name="BDialog.cpp"
+   text-time="2007-12-29T08:50:54.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="78254c85e84c74db9b58c926646be7ae"
+   last-author="bjoern"
+   kind="file"/>
+<entry
+   committed-rev="397"
+   name="BKeyboard.cpp"
+   text-time="2007-12-29T08:50:54.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="8f07b1b3f0f2a91922f26b6b84cc51d2"
+   last-author="bjoern"
+   kind="file"/>
+<entry
+   committed-rev="397"
+   name="BGraphics.cpp"
+   text-time="2007-12-29T08:50:54.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="526b0913017427e02d258c2331b08486"
+   last-author="bjoern"
+   kind="file"/>
+<entry
+   committed-rev="397"
+   name="BFontManager.cpp"
+   text-time="2007-12-29T08:50:54.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="1eed6b03fabf763bac02d17b36e575b3"
+   last-author="bjoern"
+   kind="file"/>
+<entry
+   committed-rev="397"
+   name="BTheme.cpp"
+   text-time="2007-12-29T08:50:54.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="98bbcea68b75b1de69498cd9a235347d"
+   last-author="bjoern"
+   kind="file"/>
+<entry
+   committed-rev="397"
+   name="BMenu.cpp"
+   text-time="2007-12-29T08:50:54.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="1e0e49d19efca113ec8416745b6697cf"
+   last-author="bjoern"
+   kind="file"/>
+<entry
+   committed-rev="397"
+   name="BFont.cpp"
+   text-time="2007-12-29T08:50:54.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="bdb1099b36ca35d438ecc7078cf2e706"
+   last-author="bjoern"
+   kind="file"/>
+<entry
+   committed-rev="397"
+   name="BFontSelector.cpp"
+   text-time="2007-12-29T08:50:54.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="2451071eb15755fcde7bc9a54073d5bd"
+   last-author="bjoern"
+   kind="file"/>
+<entry
+   committed-rev="397"
+   name="BRadioGroup.cpp"
+   text-time="2007-12-29T08:50:54.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="62c6949d6be12c280d0646d6f07cad8d"
+   last-author="bjoern"
+   kind="file"/>
+<entry
+   committed-rev="397"
+   name="BButton.cpp"
+   text-time="2007-12-29T08:50:54.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="1f74627c6e49fd7e39091a4c1cb3f9bd"
+   last-author="bjoern"
+   kind="file"/>
+<entry
+   committed-rev="397"
+   name="BAnimation.cpp"
+   text-time="2007-12-29T08:50:54.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="7db1b627940bdc6fc531a148957c97d1"
+   last-author="bjoern"
+   kind="file"/>
+<entry
+   committed-rev="397"
+   name="BScreen.cpp"
+   text-time="2007-12-29T08:50:54.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="f73c143e020a47f679b1d2b8012c0ce3"
+   last-author="bjoern"
+   kind="file"/>
+<entry
+   committed-rev="397"
+   name="BLabel.cpp"
+   text-time="2007-12-29T08:50:54.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="ddd5f182b7847a43d4c3713621f4009b"
+   last-author="bjoern"
+   kind="file"/>
+<entry
+   committed-rev="397"
+   name="BFileSelector.cpp"
+   text-time="2007-12-29T08:50:55.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="004bbb2525085c0d3e6bb5d4666653d8"
+   last-author="bjoern"
+   kind="file"/>
+<entry
+   committed-rev="397"
+   name="BImage.cpp"
+   text-time="2007-12-29T08:50:55.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="80a027297bce0925f06e4b89efe00eab"
+   last-author="bjoern"
+   kind="file"/>
+<entry
+   committed-rev="397"
+   name="BScrollable.cpp"
+   text-time="2007-12-29T09:15:34.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="8cb7fbbd0433f3e35ef1ca7ea05321e1"
+   last-author="bjoern"
+   kind="file"/>
+<entry
+   committed-rev="397"
+   name="BWidget.cpp"
+   text-time="2007-12-29T08:50:55.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="913ad7ec45cca59bcac43b43e52460f6"
+   last-author="bjoern"
+   kind="file"/>
+<entry
+   committed-rev="397"
+   name="BText.cpp"
+   text-time="2007-12-29T08:50:55.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="f9d7daf4c703a81fc0c36b7d25def487"
+   last-author="bjoern"
+   kind="file"/>
+<entry
+   committed-rev="397"
+   name="BListbox.cpp"
+   text-time="2007-12-29T08:50:55.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="6e64b22788f54153632f63bf80a564b8"
+   last-author="bjoern"
+   kind="file"/>
+<entry
+   committed-rev="397"
+   name="BGUI.cpp"
+   text-time="2007-12-29T08:50:55.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="848c18595aea949232011f6da3bf1be7"
+   last-author="bjoern"
+   kind="file"/>
+<entry
+   committed-rev="397"
+   name="BTabbedWidget.cpp"
+   text-time="2007-12-29T08:50:55.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="1842b23b40e42e759d7606fd25cac277"
+   last-author="bjoern"
+   kind="file"/>
+<entry
+   committed-rev="397"
+   name="BScroller.cpp"
+   text-time="2007-12-29T08:50:55.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="885350d9b80664e536b64aa6a2a3c5de"
+   last-author="bjoern"
+   kind="file"/>
+<entry
+   committed-rev="397"
+   name="BVirtualFile.cpp"
+   text-time="2007-12-29T08:50:55.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="e7dd2e121cd8992cca2b5b53d35f4545"
+   last-author="bjoern"
+   kind="file"/>
+<entry
+   committed-rev="397"
+   name="BStringUtils.cpp"
+   text-time="2007-12-29T08:50:55.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="754ad2d764f8f51ffe6f42070da54e95"
+   last-author="bjoern"
+   kind="file"/>
+<entry
+   committed-rev="397"
+   name="BProgressBar.cpp"
+   text-time="2007-12-29T08:50:55.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="4d9ad3d35760984a7169f0e3a7ead215"
+   last-author="bjoern"
+   kind="file"/>
+</wc-entries>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="397"
+   name=""
+   committed-date="2007-12-29T09:16:18.023823Z"
+   url="svn+ssh://giesler.biz/Users/Shared/Subversion/Bjoern/NintendoDS/DSGUI/release-0.3"
+   last-author="bjoern"
+   kind="dir"
+   uuid="cf5e7cae-daff-0310-bc88-a7f70dbeb50a"
+   revision="397"/>
+<entry
+   name="source"
+   kind="dir"/>
+<entry
+   name="tools"
+   kind="dir"/>
+<entry
+   name="include"
+   kind="dir"/>
+<entry
+   name="data"
+   kind="dir"/>
+<entry
+   name="fonts"
+   kind="dir"/>
+<entry
+   committed-rev="397"
+   name="README.txt"
+   text-time="2007-12-29T08:51:04.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="02c1e5f40140df50555aaab1e269905a"
+   last-author="bjoern"
+   kind="file"/>
+<entry
+   committed-rev="397"
+   name="Makefile"
+   text-time="2007-12-29T08:51:04.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="9e806b887d24059ce6dba2e82e98fbc6"
+   last-author="bjoern"
+   kind="file"/>
+<entry
+   committed-rev="397"
+   name="DSGUI.doxyfile"
+   text-time="2007-12-29T08:51:04.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="e6a0be68869a69109e206c1d0d4d9ad3"
+   last-author="bjoern"
+   kind="file"/>
+</wc-entries>

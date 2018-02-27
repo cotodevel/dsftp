@@ -1,0 +1,739 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="397"
+   name=""
+   committed-date="2007-12-29T09:16:18.023823Z"
+   url="svn+ssh://giesler.biz/Users/Shared/Subversion/Bjoern/NintendoDS/DSGUI/release-0.3/fonts"
+   last-author="bjoern"
+   kind="dir"
+   uuid="cf5e7cae-daff-0310-bc88-a7f70dbeb50a"
+   revision="397"/>
+<entry
+   committed-rev="397"
+   name="Bitstream_Vera_Sans_Bold_Oblique_10.bfont"
+   text-time="2007-12-29T08:50:56.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="555588b157a1314bbb8e936acf378949"
+   last-author="bjoern"
+   kind="file"
+   prop-time="2007-12-29T08:51:00.000000Z"/>
+<entry
+   committed-rev="397"
+   name="Bitstream_Vera_Sans_Bold_Oblique_12.bfont"
+   text-time="2007-12-29T08:50:56.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="beed324004473da3dab87e533269d725"
+   last-author="bjoern"
+   kind="file"
+   prop-time="2007-12-29T08:50:59.000000Z"/>
+<entry
+   committed-rev="397"
+   name="Bitstream_Vera_Sans_Bold_Oblique_8.png"
+   text-time="2007-12-29T08:50:56.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="f4bb9c3ac8143ff08241b78049528650"
+   last-author="bjoern"
+   kind="file"
+   prop-time="2007-12-29T08:51:00.000000Z"/>
+<entry
+   committed-rev="397"
+   name="Bitstream_Vera_Sans_Mono_Bold_Oblique_10.png"
+   text-time="2007-12-29T08:50:57.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="3b36e0c33ea7867e5cffa4b581ea3195"
+   last-author="bjoern"
+   kind="file"
+   prop-time="2007-12-29T08:51:00.000000Z"/>
+<entry
+   committed-rev="397"
+   name="Bitstream_Vera_Sans_Bold_Oblique_14.bfont"
+   text-time="2007-12-29T08:50:56.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="f41b2ffb069ca02f89951b51b9dc2a3e"
+   last-author="bjoern"
+   kind="file"
+   prop-time="2007-12-29T08:51:00.000000Z"/>
+<entry
+   committed-rev="397"
+   name="Bitstream_Vera_Sans_Mono_Bold_Oblique_12.png"
+   text-time="2007-12-29T08:50:57.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="231e03afb395ef76567e02ef0f817ac2"
+   last-author="bjoern"
+   kind="file"
+   prop-time="2007-12-29T08:50:59.000000Z"/>
+<entry
+   committed-rev="397"
+   name="Bitstream_Vera_Serif_Roman_8.bfont"
+   text-time="2007-12-29T08:50:57.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="2ae8933d3bf1a341e40c076dd073cc60"
+   last-author="bjoern"
+   kind="file"
+   prop-time="2007-12-29T08:51:00.000000Z"/>
+<entry
+   committed-rev="397"
+   name="Bitstream_Vera_Sans_Bold_8.bfont"
+   text-time="2007-12-29T08:50:57.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="2c03847cd00e583df4ef692626b17c1e"
+   last-author="bjoern"
+   kind="file"
+   prop-time="2007-12-29T08:51:00.000000Z"/>
+<entry
+   committed-rev="397"
+   name="Bitstream_Vera_Sans_Mono_Bold_Oblique_14.png"
+   text-time="2007-12-29T08:50:57.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="dd1523ae1ed5b49ce8e37e17dcb451fa"
+   last-author="bjoern"
+   kind="file"
+   prop-time="2007-12-29T08:51:00.000000Z"/>
+<entry
+   committed-rev="397"
+   name="Bitstream_Vera_Sans_Mono_Oblique_8.bfont"
+   text-time="2007-12-29T08:50:57.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="cf22df25708fc54b966fef05483da7bd"
+   last-author="bjoern"
+   kind="file"
+   prop-time="2007-12-29T08:51:00.000000Z"/>
+<entry
+   committed-rev="397"
+   name="Bitstream_Vera_Serif_Bold_10.bfont"
+   text-time="2007-12-29T08:50:57.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="1db33f42e2bf170c3f3b9883d0ffbfc7"
+   last-author="bjoern"
+   kind="file"
+   prop-time="2007-12-29T08:51:00.000000Z"/>
+<entry
+   committed-rev="397"
+   name="Bitstream_Vera_Serif_Bold_12.bfont"
+   text-time="2007-12-29T08:50:57.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="3265abb82422f18a4a2d9bf68f3bbf96"
+   last-author="bjoern"
+   kind="file"
+   prop-time="2007-12-29T08:50:59.000000Z"/>
+<entry
+   committed-rev="397"
+   name="Bitstream_Vera_Serif_Bold_8.png"
+   text-time="2007-12-29T08:50:57.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="232405bad71f2d0d558e26d9aaab40cf"
+   last-author="bjoern"
+   kind="file"
+   prop-time="2007-12-29T08:51:00.000000Z"/>
+<entry
+   committed-rev="397"
+   name="Bitstream_Vera_Sans_Bold_Oblique_8.bfont"
+   text-time="2007-12-29T08:50:57.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="48a1434be4a8489509d70979fa6ecd70"
+   last-author="bjoern"
+   kind="file"
+   prop-time="2007-12-29T08:51:00.000000Z"/>
+<entry
+   committed-rev="397"
+   name="Bitstream_Vera_Serif_Bold_14.bfont"
+   text-time="2007-12-29T08:50:57.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="e8d714960636b1e966b9ea0fcf7d6e46"
+   last-author="bjoern"
+   kind="file"
+   prop-time="2007-12-29T08:51:00.000000Z"/>
+<entry
+   committed-rev="397"
+   name="Bitstream_Vera_Sans_Bold_10.png"
+   text-time="2007-12-29T08:50:57.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="47aefb770dadaf6cdbc3f955da16d78d"
+   last-author="bjoern"
+   kind="file"
+   prop-time="2007-12-29T08:51:00.000000Z"/>
+<entry
+   committed-rev="397"
+   name="Bitstream_Vera_Serif_Roman_10.png"
+   text-time="2007-12-29T08:50:57.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="073568e501cddf1c2477f14448ad68b2"
+   last-author="bjoern"
+   kind="file"
+   prop-time="2007-12-29T08:51:00.000000Z"/>
+<entry
+   committed-rev="397"
+   name="Bitstream_Vera_Sans_Bold_12.png"
+   text-time="2007-12-29T08:50:57.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="a5f253250677a04c1a66adda482b1cba"
+   last-author="bjoern"
+   kind="file"
+   prop-time="2007-12-29T08:51:00.000000Z"/>
+<entry
+   committed-rev="397"
+   name="Bitstream_Vera_Serif_Roman_12.png"
+   text-time="2007-12-29T08:50:57.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="5e5dde03e0315abe6ed255164fca8058"
+   last-author="bjoern"
+   kind="file"
+   prop-time="2007-12-29T08:51:00.000000Z"/>
+<entry
+   committed-rev="397"
+   name="Bitstream_Vera_Sans_Oblique_10.bfont"
+   text-time="2007-12-29T08:50:57.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="05e101f9a4f08be42301d74f29d90d8b"
+   last-author="bjoern"
+   kind="file"
+   prop-time="2007-12-29T08:51:00.000000Z"/>
+<entry
+   committed-rev="397"
+   name="Bitstream_Vera_Sans_Bold_14.png"
+   text-time="2007-12-29T08:50:57.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="ba245e62ac8deaecd7b72f1ce1144692"
+   last-author="bjoern"
+   kind="file"
+   prop-time="2007-12-29T08:51:00.000000Z"/>
+<entry
+   committed-rev="397"
+   name="Bitstream_Vera_Serif_Roman_14.png"
+   text-time="2007-12-29T08:50:57.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="fb15f6e1ac760927992d61212baa89b2"
+   last-author="bjoern"
+   kind="file"
+   prop-time="2007-12-29T08:51:00.000000Z"/>
+<entry
+   committed-rev="397"
+   name="Bitstream_Vera_Sans_Oblique_12.bfont"
+   text-time="2007-12-29T08:50:57.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="4705e73210d3867ddfeeec8e0dba5b0a"
+   last-author="bjoern"
+   kind="file"
+   prop-time="2007-12-29T08:51:00.000000Z"/>
+<entry
+   committed-rev="397"
+   name="Bitstream_Vera_Sans_Oblique_8.png"
+   text-time="2007-12-29T08:50:57.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="2e66c3a05017cb8ca95b317c7fdba0cb"
+   last-author="bjoern"
+   kind="file"
+   prop-time="2007-12-29T08:51:00.000000Z"/>
+<entry
+   committed-rev="397"
+   name="Bitstream_Vera_Sans_Oblique_14.bfont"
+   text-time="2007-12-29T08:50:57.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="2e028bebc6b02516b3eccb9e1b8f95e5"
+   last-author="bjoern"
+   kind="file"
+   prop-time="2007-12-29T08:51:00.000000Z"/>
+<entry
+   committed-rev="397"
+   name="Bitstream_Vera_Sans_Mono_Roman_10.bfont"
+   text-time="2007-12-29T08:50:57.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="f26534057675e2cd1b4f8e343fd71811"
+   last-author="bjoern"
+   kind="file"
+   prop-time="2007-12-29T08:51:00.000000Z"/>
+<entry
+   committed-rev="397"
+   name="Bitstream_Vera_Sans_Mono_Oblique_10.png"
+   text-time="2007-12-29T08:50:57.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="0248a46fbecd619ec70c611dc30b8359"
+   last-author="bjoern"
+   kind="file"
+   prop-time="2007-12-29T08:51:00.000000Z"/>
+<entry
+   committed-rev="397"
+   name="Bitstream_Vera_Sans_Mono_Roman_12.bfont"
+   text-time="2007-12-29T08:50:57.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="65cd78d588be87d74e72b6b07cfb4876"
+   last-author="bjoern"
+   kind="file"
+   prop-time="2007-12-29T08:51:00.000000Z"/>
+<entry
+   committed-rev="397"
+   name="Bitstream_Vera_Sans_Mono_Oblique_12.png"
+   text-time="2007-12-29T08:50:57.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="77c9c1e75cf10359968fdfeeed3886e0"
+   last-author="bjoern"
+   kind="file"
+   prop-time="2007-12-29T08:51:00.000000Z"/>
+<entry
+   committed-rev="397"
+   name="Bitstream_Vera_Sans_Mono_Roman_8.png"
+   text-time="2007-12-29T08:50:57.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="213e5d0b9bf1742e0e0a96e6ed024df0"
+   last-author="bjoern"
+   kind="file"
+   prop-time="2007-12-29T08:51:00.000000Z"/>
+<entry
+   committed-rev="397"
+   name="Bitstream_Vera_Sans_Mono_Oblique_14.png"
+   text-time="2007-12-29T08:50:57.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="6df42b026d5a63c29d3968b96b8990d6"
+   last-author="bjoern"
+   kind="file"
+   prop-time="2007-12-29T08:50:59.000000Z"/>
+<entry
+   committed-rev="397"
+   name="Bitstream_Vera_Sans_Mono_Roman_14.bfont"
+   text-time="2007-12-29T08:50:57.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="5c70d2baa1e650a675edc8eb674ebad0"
+   last-author="bjoern"
+   kind="file"
+   prop-time="2007-12-29T08:50:59.000000Z"/>
+<entry
+   name="ttf-bitstream-vera-1.10"
+   kind="dir"/>
+<entry
+   committed-rev="397"
+   name="Bitstream_Vera_Serif_Bold_8.bfont"
+   text-time="2007-12-29T08:50:57.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="981cd9733686eee094c4302fa0a54139"
+   last-author="bjoern"
+   kind="file"
+   prop-time="2007-12-29T08:51:00.000000Z"/>
+<entry
+   committed-rev="397"
+   name="Bitstream_Vera_Sans_Bold_Oblique_10.png"
+   text-time="2007-12-29T08:50:58.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="de78af4862cd7f0d3b0b52a3db3849d6"
+   last-author="bjoern"
+   kind="file"
+   prop-time="2007-12-29T08:50:59.000000Z"/>
+<entry
+   committed-rev="397"
+   name="Bitstream_Vera_Sans_Bold_Oblique_12.png"
+   text-time="2007-12-29T08:50:58.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="e92f00e8309b7cc15a215853ec17ca2d"
+   last-author="bjoern"
+   kind="file"
+   prop-time="2007-12-29T08:51:00.000000Z"/>
+<entry
+   committed-rev="397"
+   name="Bitstream_Vera_Sans_Bold_Oblique_14.png"
+   text-time="2007-12-29T08:50:58.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="22187f9eddb827021f32ecc94ca62691"
+   last-author="bjoern"
+   kind="file"
+   prop-time="2007-12-29T08:50:59.000000Z"/>
+<entry
+   committed-rev="397"
+   name="Bitstream_Vera_Sans_Oblique_8.bfont"
+   text-time="2007-12-29T08:50:58.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="bfb9ee43fa11404e6d54378ac9f47d52"
+   last-author="bjoern"
+   kind="file"
+   prop-time="2007-12-29T08:51:00.000000Z"/>
+<entry
+   name="webcore-fonts"
+   kind="dir"/>
+<entry
+   committed-rev="397"
+   name="Bitstream_Vera_Sans_Mono_Roman_8.bfont"
+   text-time="2007-12-29T08:50:58.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="f250c37e1d683468faa085e127f089de"
+   last-author="bjoern"
+   kind="file"
+   prop-time="2007-12-29T08:51:00.000000Z"/>
+<entry
+   committed-rev="397"
+   name="Bitstream_Vera_Serif_Bold_10.png"
+   text-time="2007-12-29T08:50:59.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="eaf5b19be673cfaea7ba60ec29d1e6b1"
+   last-author="bjoern"
+   kind="file"
+   prop-time="2007-12-29T08:50:59.000000Z"/>
+<entry
+   committed-rev="397"
+   name="Bitstream_Vera_Serif_Bold_12.png"
+   text-time="2007-12-29T08:51:03.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="45656ca38bbc039da53a219c6830f6aa"
+   last-author="bjoern"
+   kind="file"
+   prop-time="2007-12-29T08:51:00.000000Z"/>
+<entry
+   committed-rev="397"
+   name="Bitstream_Vera_Serif_Bold_14.png"
+   text-time="2007-12-29T08:51:03.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="8b4bac18109a70bb643434a285913717"
+   last-author="bjoern"
+   kind="file"
+   prop-time="2007-12-29T08:50:59.000000Z"/>
+<entry
+   committed-rev="397"
+   name="Bitstream_Vera_Sans_Mono_Bold_10.bfont"
+   text-time="2007-12-29T08:51:03.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="58a8fc384589d3b69d443e8df5035c49"
+   last-author="bjoern"
+   kind="file"
+   prop-time="2007-12-29T08:50:59.000000Z"/>
+<entry
+   committed-rev="397"
+   name="Bitstream_Vera_Sans_Mono_Bold_12.bfont"
+   text-time="2007-12-29T08:51:03.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="0aec7eb547a9ef24a7be4f30ea0916e8"
+   last-author="bjoern"
+   kind="file"
+   prop-time="2007-12-29T08:51:00.000000Z"/>
+<entry
+   committed-rev="397"
+   name="Bitstream_Vera_Sans_Mono_Bold_8.png"
+   text-time="2007-12-29T08:51:03.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="fa63f246fb6da52547e91a8bd7ffab00"
+   last-author="bjoern"
+   kind="file"
+   prop-time="2007-12-29T08:50:59.000000Z"/>
+<entry
+   committed-rev="397"
+   name="Bitstream_Vera_Sans_Mono_Bold_14.bfont"
+   text-time="2007-12-29T08:51:03.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="1459b714f5437bbcf9af020c06f9fd0f"
+   last-author="bjoern"
+   kind="file"
+   prop-time="2007-12-29T08:50:59.000000Z"/>
+<entry
+   committed-rev="397"
+   name="Bitstream_Vera_Sans_Oblique_10.png"
+   text-time="2007-12-29T08:51:03.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="b32fdd4ebad20d8ed9f6e69c7a880967"
+   last-author="bjoern"
+   kind="file"
+   prop-time="2007-12-29T08:50:59.000000Z"/>
+<entry
+   committed-rev="397"
+   name="Bitstream_Vera_Sans_Roman_10.bfont"
+   text-time="2007-12-29T08:51:03.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="c640855732a5c9e7aaa99da44aa00e05"
+   last-author="bjoern"
+   kind="file"
+   prop-time="2007-12-29T08:50:59.000000Z"/>
+<entry
+   committed-rev="397"
+   name="Bitstream_Vera_Sans_Oblique_12.png"
+   text-time="2007-12-29T08:51:03.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="0eca5a563aac0c60d3a95eb68e140121"
+   last-author="bjoern"
+   kind="file"
+   prop-time="2007-12-29T08:51:00.000000Z"/>
+<entry
+   committed-rev="397"
+   name="Bitstream_Vera_Sans_Roman_12.bfont"
+   text-time="2007-12-29T08:51:03.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="3bc4a52cb7be62775711aafd4ab7d04f"
+   last-author="bjoern"
+   kind="file"
+   prop-time="2007-12-29T08:51:00.000000Z"/>
+<entry
+   committed-rev="397"
+   name="Bitstream_Vera_Sans_Roman_8.png"
+   text-time="2007-12-29T08:51:03.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="29f184e9d961747bd0cef93b2d81a434"
+   last-author="bjoern"
+   kind="file"
+   prop-time="2007-12-29T08:50:59.000000Z"/>
+<entry
+   committed-rev="397"
+   name="Bitstream_Vera_Sans_Mono_Roman_10.png"
+   text-time="2007-12-29T08:51:03.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="267f76765fab495a270ae8fc3d8f16ff"
+   last-author="bjoern"
+   kind="file"
+   prop-time="2007-12-29T08:50:59.000000Z"/>
+<entry
+   committed-rev="397"
+   name="Bitstream_Vera_Sans_Oblique_14.png"
+   text-time="2007-12-29T08:51:03.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="792ff7199169506a2519a45489d8b52e"
+   last-author="bjoern"
+   kind="file"
+   prop-time="2007-12-29T08:50:59.000000Z"/>
+<entry
+   committed-rev="397"
+   name="Bitstream_Vera_Sans_Roman_14.bfont"
+   text-time="2007-12-29T08:51:03.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="66250ba212201668e135ff5dec06cb02"
+   last-author="bjoern"
+   kind="file"
+   prop-time="2007-12-29T08:50:59.000000Z"/>
+<entry
+   committed-rev="397"
+   name="Bitstream_Vera_Sans_Mono_Roman_12.png"
+   text-time="2007-12-29T08:51:03.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="0c6c29811b0348ce240a034a4482a638"
+   last-author="bjoern"
+   kind="file"
+   prop-time="2007-12-29T08:51:00.000000Z"/>
+<entry
+   committed-rev="397"
+   name="Bitstream_Vera_Sans_Mono_Roman_14.png"
+   text-time="2007-12-29T08:51:04.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="9ba732bf956d97f8e58ffa0aad4714bf"
+   last-author="bjoern"
+   kind="file"
+   prop-time="2007-12-29T08:50:59.000000Z"/>
+<entry
+   committed-rev="397"
+   name="Bitstream_Vera_Sans_Mono_Bold_Oblique_10.bfont"
+   text-time="2007-12-29T08:51:04.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="6624d190563fd3d9aae99187d9888f5c"
+   last-author="bjoern"
+   kind="file"
+   prop-time="2007-12-29T08:50:59.000000Z"/>
+<entry
+   committed-rev="397"
+   name="Bitstream_Vera_Sans_Mono_Bold_Oblique_12.bfont"
+   text-time="2007-12-29T08:51:04.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="4650a36f496ea17b5f0b451f2fc77b15"
+   last-author="bjoern"
+   kind="file"
+   prop-time="2007-12-29T08:51:00.000000Z"/>
+<entry
+   committed-rev="397"
+   name="Bitstream_Vera_Sans_Mono_Bold_Oblique_8.png"
+   text-time="2007-12-29T08:51:04.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="a761b5acfaa717e8dcf405f69daa60b2"
+   last-author="bjoern"
+   kind="file"
+   prop-time="2007-12-29T08:50:59.000000Z"/>
+<entry
+   committed-rev="397"
+   name="Bitstream_Vera_Sans_Mono_Bold_Oblique_14.bfont"
+   text-time="2007-12-29T08:51:04.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="864b2be180ac2cbec8b4aca17ba86a7e"
+   last-author="bjoern"
+   kind="file"
+   prop-time="2007-12-29T08:51:00.000000Z"/>
+<entry
+   committed-rev="397"
+   name="Bitstream_Vera_Sans_Mono_Bold_8.bfont"
+   text-time="2007-12-29T08:51:04.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="0e4ae0057ee25c2025742874aec0d358"
+   last-author="bjoern"
+   kind="file"
+   prop-time="2007-12-29T08:50:59.000000Z"/>
+<entry
+   committed-rev="397"
+   name="Bitstream_Vera_Sans_Roman_8.bfont"
+   text-time="2007-12-29T08:51:04.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="e92632e219d31d4b538b649a7b05f8f1"
+   last-author="bjoern"
+   kind="file"
+   prop-time="2007-12-29T08:50:59.000000Z"/>
+<entry
+   committed-rev="397"
+   name="Bitstream_Vera_Sans_Mono_Bold_Oblique_8.bfont"
+   text-time="2007-12-29T08:51:04.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="efa3e2a35008f13b5144289fce17d4f4"
+   last-author="bjoern"
+   kind="file"
+   prop-time="2007-12-29T08:50:59.000000Z"/>
+<entry
+   committed-rev="397"
+   name="Bitstream_Vera_Sans_Bold_10.bfont"
+   text-time="2007-12-29T08:51:04.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="ccf6c6ca35e799f7cf34a347ad46b513"
+   last-author="bjoern"
+   kind="file"
+   prop-time="2007-12-29T08:51:00.000000Z"/>
+<entry
+   committed-rev="397"
+   name="Bitstream_Vera_Serif_Roman_10.bfont"
+   text-time="2007-12-29T08:51:04.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="9a0c37dd9e92dad5c839daeec0d93596"
+   last-author="bjoern"
+   kind="file"
+   prop-time="2007-12-29T08:51:00.000000Z"/>
+<entry
+   committed-rev="397"
+   name="Bitstream_Vera_Sans_Bold_12.bfont"
+   text-time="2007-12-29T08:51:04.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="7acd6e25d4faa758328e9f8608641509"
+   last-author="bjoern"
+   kind="file"
+   prop-time="2007-12-29T08:50:59.000000Z"/>
+<entry
+   committed-rev="397"
+   name="Bitstream_Vera_Serif_Roman_12.bfont"
+   text-time="2007-12-29T08:51:04.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="7df8f88e9b042e7ffe82b23bb0f58f76"
+   last-author="bjoern"
+   kind="file"
+   prop-time="2007-12-29T08:50:59.000000Z"/>
+<entry
+   committed-rev="397"
+   name="Bitstream_Vera_Sans_Bold_8.png"
+   text-time="2007-12-29T08:51:04.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="61cf73540dbd34dcb4265953ca3c6aff"
+   last-author="bjoern"
+   kind="file"
+   prop-time="2007-12-29T08:50:59.000000Z"/>
+<entry
+   committed-rev="397"
+   name="Bitstream_Vera_Serif_Roman_8.png"
+   text-time="2007-12-29T08:51:04.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="8551f2fc512f4e5d62b96782dccac02f"
+   last-author="bjoern"
+   kind="file"
+   prop-time="2007-12-29T08:50:59.000000Z"/>
+<entry
+   committed-rev="397"
+   name="Bitstream_Vera_Sans_Bold_14.bfont"
+   text-time="2007-12-29T08:51:04.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="d225d4ce593852e146952395780d9eaa"
+   last-author="bjoern"
+   kind="file"
+   prop-time="2007-12-29T08:51:00.000000Z"/>
+<entry
+   committed-rev="397"
+   name="Bitstream_Vera_Sans_Mono_Bold_10.png"
+   text-time="2007-12-29T08:51:04.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="64acd2a7922a4b6b74eb5a84e28ed01f"
+   last-author="bjoern"
+   kind="file"
+   prop-time="2007-12-29T08:51:00.000000Z"/>
+<entry
+   committed-rev="397"
+   name="Bitstream_Vera_Serif_Roman_14.bfont"
+   text-time="2007-12-29T08:51:04.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="90a4786762f42bc37c74f3d83e88f504"
+   last-author="bjoern"
+   kind="file"
+   prop-time="2007-12-29T08:51:00.000000Z"/>
+<entry
+   committed-rev="397"
+   name="Bitstream_Vera_Sans_Mono_Bold_12.png"
+   text-time="2007-12-29T08:51:04.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="29c00652f99a1d671918aa74d5e444c8"
+   last-author="bjoern"
+   kind="file"
+   prop-time="2007-12-29T08:50:59.000000Z"/>
+<entry
+   committed-rev="397"
+   name="Bitstream_Vera_Sans_Roman_10.png"
+   text-time="2007-12-29T08:51:04.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="f26ab1ee18e11c36caaa5e35fb6e2941"
+   last-author="bjoern"
+   kind="file"
+   prop-time="2007-12-29T08:51:00.000000Z"/>
+<entry
+   committed-rev="397"
+   name="Bitstream_Vera_Sans_Mono_Oblique_10.bfont"
+   text-time="2007-12-29T08:51:04.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="55f782b96a4673570d707e2dfbbd7704"
+   last-author="bjoern"
+   kind="file"
+   prop-time="2007-12-29T08:51:00.000000Z"/>
+<entry
+   committed-rev="397"
+   name="Bitstream_Vera_Sans_Mono_Bold_14.png"
+   text-time="2007-12-29T08:51:04.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="46b579248e0da8f6273308506895c8a4"
+   last-author="bjoern"
+   kind="file"
+   prop-time="2007-12-29T08:51:00.000000Z"/>
+<entry
+   committed-rev="397"
+   name="Bitstream_Vera_Sans_Roman_12.png"
+   text-time="2007-12-29T08:51:04.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="f91f9ccd0707553915800bd1bb8cf687"
+   last-author="bjoern"
+   kind="file"
+   prop-time="2007-12-29T08:50:59.000000Z"/>
+<entry
+   committed-rev="397"
+   name="Bitstream_Vera_Sans_Mono_Oblique_12.bfont"
+   text-time="2007-12-29T08:51:04.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="c4dd12171ab3225ae6897046142e8d8c"
+   last-author="bjoern"
+   kind="file"
+   prop-time="2007-12-29T08:50:59.000000Z"/>
+<entry
+   committed-rev="397"
+   name="Bitstream_Vera_Sans_Mono_Oblique_8.png"
+   text-time="2007-12-29T08:51:04.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="494de7a57d816b506af2ab54f6fa3597"
+   last-author="bjoern"
+   kind="file"
+   prop-time="2007-12-29T08:51:00.000000Z"/>
+<entry
+   committed-rev="397"
+   name="Bitstream_Vera_Sans_Roman_14.png"
+   text-time="2007-12-29T08:51:04.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="d170e0fd1e695b97f3f91962a25dd62a"
+   last-author="bjoern"
+   kind="file"
+   prop-time="2007-12-29T08:51:00.000000Z"/>
+<entry
+   committed-rev="397"
+   name="Bitstream_Vera_Sans_Mono_Oblique_14.bfont"
+   text-time="2007-12-29T08:51:04.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="5eb7ef7af0543e7cd9d730553ea5a1c2"
+   last-author="bjoern"
+   kind="file"
+   prop-time="2007-12-29T08:51:00.000000Z"/>
+</wc-entries>

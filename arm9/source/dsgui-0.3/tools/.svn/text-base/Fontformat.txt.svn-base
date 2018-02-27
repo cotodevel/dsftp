@@ -1,0 +1,257 @@
+
+Font Format Version 1 for the BFont class
+
+Preliminaries
+
+Fonts are bitmapped and stored in a black-on-white bitmap, which makes
+up the bulk of a font file. The font file's front end contains header
+information such as the font name, size and attributes, what
+characters are encoded in the file, and the glyph indices into the
+bitmap.
+
+There are just four basic data types:
+
+o the 8-bit BYTE.
+
+o the 16-bit WORD. WORDs are stored big-endian, i.e. the high byte is
+  stored first and the low byte last.
+
+o the 32-bit DWORD. DWORDs are stored big-endian, i.e. the high byte is
+  stored first and the low byte last.
+
+o the STRING. This is stored as follows: One BYTE containing the
+  length of the string, followed by the according number of characters
+  (BYTEs). There is no end-of-string delimiter, and the maximum string
+  length is 255.
+
+Character Ranges
+
+A character range is a range given by start and end 16-bit numbers
+delimiting the range. A font can contain up to 255 character ranges;
+only characters in the ranges are defined as printable. Example: The
+range for the 95 printable characters contained in 7-bit ASCII is
+given by the numbers 32 to 126, or 0x0020 to 0x007e. A 7-bit ASCII
+font typically contains only that one range. The 8-bit ISO-8859-1
+standard also contains the range from 161 to 255, or 0x00a1 to 0x00ff;
+so an ISO font would contain two ranges, 0x0020-0x007e and 0x00a1 to
+0x00ff. 
+
+Other fonts (e.g. Unicode) can contain more ranges.
+
+The sum of all range lengths (SUM(range[i].end-range[i].start+1)) is
+the total number of characters in the font.
+
+Limitations
+
+The current data format has the following limitations:
+
+o Character ranges are specified as 4-byte DWORDs, which allows the
+  complete Unicode range to be represented. 
+
+o The font bitmap is limited to a maximum of 65536 pixels in width and
+  255 pixels in height, which probably doesn't allow the complete
+  Unicode range to be depicted; however, a 65536x255 uncompressed
+  greyscale image takes up about 16MB of memory at 8 bits per pixel,
+  which is a lot more than the DS currently has.
+
+o A character cannot be more than 255 pixels wide. Following from the
+  last point, it can also not be more than 255 pixels high.
+
+o Strings such as font names cannot be longer than 255 characters.
+
+Format
+
+What follows is a list of all the fields in the font file, and their
+size. The fields are stored in the listed order.
+
+NAME: magic
+TYPE: 4*BYTE
+COMMENT: This must be the string "BFNT" to identify that this file is
+	 a BFont file.
+
+NAME: version
+TYPE: BYTE
+COMMENT: This defines the file format version. If this is not 1, then
+	 this documentation is not applicable.
+
+NAME: formatflags
+TYPE: BYTE
+COMMENT: A bit combination of different flags. Currently, none are
+	 defined, and this field is always 0.
+
+NAME: encodingflags
+TYPE: BYTE
+COMMENT: A bit combination of different flags, currently defined as
+	 follows: 
+		  o If this is 0, the font is ASCII-encoded. 
+		  o If it is 1, the font is Unicode-encoded. 
+		  o If bit 4 is set, the font is ISO-8859 encoded,
+		    with bit 0-3 (value range 0-15) specifying the ISO
+		    subencoding (which ranges from 1-16).
+		    Example: 
+			     0001 0000 -> ISO 8859-1 (Western European)
+			     0001 0001 -> ISO 8859-2 (Central European)
+			     0001 0100 -> ISO 8859-5 (Latin/Cyrillic)
+
+	 Other bit combinations are currently not supported.
+
+NAME: fontname
+TYPE: STRING
+COMMENT: The short name of the font. This should not contain flags
+	 such as Bold or Oblique; these should be stored separately
+	 instead, see below. Example: "Bitstream Vera Serif"
+
+NAME: fontfullname
+TYPE: STRING
+COMMENT: The full name of the font, including specifiers such as Bold
+	 or Oblique. Example: "Bitstream Vera Serif Bold Oblique"
+
+NAME: fontheight
+TYPE: BYTE
+COMMENT: The height of the font in pixels. Not necessarily the height
+	 of the font's bitmap!
+
+NAME: fontflags
+TYPE: BYTE
+COMMENT: This is a combination of 8 flags, of which only Bold (Bit 0 =
+	 0x01) and Italic (Bit 1 = 0x02) are defined so far. For
+	 Regular fonts, this is 0, for a Bold Italic font, this would
+	 be 0x03.
+
+NAME: numranges
+TYPE: BYTE
+COMMENT: The number of character ranges that follow.
+
+NAME: range[i]
+TYPE: n*2*DWORD
+COMMENT: n ranges (i=0..n-1) of characters encoded in the font. The
+	 sum of all range lengths gives the total number of characters
+	 in the font.
+
+NAME: glyphdescr[i]
+TYPE: n*(WORD+BYTE)
+COMMENT: The indices (WORD) and widths (BYTE) of the glyphs in the font.
+	 The number of glyph descriptions (and thereby the number of
+	 glyphs in the font) is the sum of all range lengths.
+
+NAME: bmpwidth
+TYPE: WORD
+COMMENT: The width of the following bitmap. This must be equal to or
+	 larger than the sum of all glyph widths.
+
+NAME: bmpheight
+TYPE: BYTE
+COMMENT: The height of the following bitmap.
+
+NAME: bitmap
+TYPE: n*BYTE
+COMMENT: The bitmap containing the font glyphs. This is a data block
+	 of bmpheight image lines of length bmpwidth. The bitmap is
+	 monochrome, 1 byte per pixel, of which only the low 5 bits
+	 are used. This gives a maximum pixel value of 0x1f, meaning
+	 white, and a minimum value of 0, meaning black.
+	 The glyphs are drawn in black (or shades thereof, for an
+	 anti-aliased font) on a white background.
+	 
+
+Notes
+
+o Later versions may store more geometry information about glyphs.
+  
+  Storing both indices and widths for glyphs seems like a waste, but
+  is necessary for special fonts such as Apple's flowing script fonts,
+  where undercuts are needed. To support this, widths and indices
+  should be interpreted as follows: The glyph width defines the step
+  width of the cursor on the area that the font is drawn upon, and the
+  difference of this glyph's and the next glyph's index defines the
+  area in the font bitmap that contains the glyph. So a flowing "N"
+  that sweeps to the right could have an index of 10, a width of 20
+  (containing just the body of the "N"), and the "O" glyph could have
+  an index of 40. In that case, 40-10=30 pixels would be drawn to the
+  page, but the cursor would only be advanced by 20 pixels, leaving
+  the next character covered by the sweep of the "N".
+
+o Currently, the bitmap is stored as-is, which is a huge waste of
+  memory, especially as much of the bitmap consists of white
+  pixels. A typical 10-point font in ISO8859-1 encoding 
+
+  Since color values are 5-bit only and therefore escape
+  characters can be marked without loss of space, later versions could
+  implement run-length encoding very easily. Example:
+
+	    000c cccc  
+		       -> 1 byte of color ccccc, i.e. don't expand.
+	    0eec cccc  
+		       -> expand to (ee+1) times the color ccccc.
+	    1eee eeee  eeec cccc 
+		       -> expand to (eeeeeeeeee+1) times the color
+		          ccccc.
+
+  A run length encoded image would be identified by a formatflags value.
+
+The mkbfont program
+
+The supplied mkbfont program uses Python, the Python Imaging Library
+(PIL) and the FreeType library to create bfont files from TrueType
+files. Its usage is as follows:
+
+      python mkbfont.py FONTFILE FONTHEIGHT
+
+where FONTFILE is a TrueType font file, and FONTHEIGHT gives the
+height (in pixels) of the output bfont file. 
+
+The output file will be named from the name information encoded in the
+TrueType file and the given height. Example: The well-known Bitstream
+Vera Sans font (TrueType file name Vera.ttf), rendered at 10 pixels,
+will generate a file named "Bitstream_Vera_Sans_Roman_10.bfont".
+
+The program also outputs a PNG file of the rendered font. This is just
+for reference and not a part of the bfont file.
+
+The program encodes all printable characters from the basic ASCII
+range and the Latin-1 additions. To encode other parts of the Unicode
+range, you must edit the mkbfont.py file, modifying the "ranges="
+statement near the top. Please make sure that the TrueType font you
+are converting actually contains the characters for the specified code
+points. Code points not contained in the TrueType font will be
+rendered as the "unknown character" glyph (a black rectangle outline),
+wasting valuable memory in the font file.
+
+Font usage in the library
+
+The library may contain one or more compiled-in fonts, depending on
+what version of the library you are using.
+
+     o the nofonts version of the library contains no built-in fonts;
+       BFont::defaultFont() initially returns NULL
+
+     o the regular version (without any special name) contains exactly
+       one font, namely the Bitstream Vera Sans Roman font, rendered
+       at 10 pixels. This is the font returned initially by
+       BFont::defaultFont().
+
+     o the fatfonts version contains twelve built-in fonts, amounting
+       to about 100KB of memory. These fonts are:
+	     Bitstream Vera Sans Roman
+	     Bitstream Vera Sans Bold
+	     Bitstream Vera Sans Mono
+	     Bitstream Vera Sans Mono Bold
+	     Bitstream Vera Serif Roman
+	     Bitstream Vera Serif Bold
+       each rendered at 10 and 14 pixels. The font returned initially
+       by BFont::defaultFont() is Bitstream Vera Sans Roman at 10
+       pixels (like in the regular version). The other built-in fonts
+       are guaranteed to be available through the BFontManager class.
+
+The other pre-rendered font files available with the library are the
+ten Bitstream Vera fonts, rendered at 8, 10, 12, and 14 pixels for a
+total of about 800KB of memory. These can be loaded from flash card
+via the BFontManager or BFont classes. The recommended storage
+location for the fonts is the /data/fonts directory.
+
+All the pre-rendered fonts contain only glyphs for the ASCII and
+Latin-1 alphabets, since the Bitstream fonts do not provide other
+glyphs. Later versions of the library may switch to usage of the
+DejaVu fonts or other free fonts that contain more of Unicode. Until
+then, users who need glyphs not present in the supplied fonts must
+create their own fonts with the mkbfont program.

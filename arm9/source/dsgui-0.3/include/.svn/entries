@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="397"
+   name=""
+   committed-date="2007-12-29T09:16:18.023823Z"
+   url="svn+ssh://giesler.biz/Users/Shared/Subversion/Bjoern/NintendoDS/DSGUI/release-0.3/include"
+   last-author="bjoern"
+   kind="dir"
+   uuid="cf5e7cae-daff-0310-bc88-a7f70dbeb50a"
+   revision="397"/>
+<entry
+   committed-rev="397"
+   name="BProgressBar.h"
+   text-time="2007-12-29T08:50:55.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="2eca68937794f0943df1f357438bd94d"
+   last-author="bjoern"
+   kind="file"/>
+<entry
+   committed-rev="397"
+   name="BMessagebox.h"
+   text-time="2007-12-29T08:50:56.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="5adf5c2515d1f1ae94936c6c67fbe1d1"
+   last-author="bjoern"
+   kind="file"/>
+<entry
+   committed-rev="397"
+   name="BException.h"
+   text-time="2007-12-29T08:50:56.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="adfa60cfaeef3a5f90b0b8a788dfea42"
+   last-author="bjoern"
+   kind="file"/>
+<entry
+   committed-rev="397"
+   name="BResponder.h"
+   text-time="2007-12-29T08:50:56.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="11225b1a2c9193804a77ca31e73ec05c"
+   last-author="bjoern"
+   kind="file"/>
+<entry
+   committed-rev="397"
+   name="BMenu.h"
+   text-time="2007-12-29T08:50:56.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="d433a86dc47044393265fa87129b0ecb"
+   last-author="bjoern"
+   kind="file"/>
+<entry
+   committed-rev="397"
+   name="BFontSelector.h"
+   text-time="2007-12-29T08:50:56.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="122717ea9355b733098c289df751ed62"
+   last-author="bjoern"
+   kind="file"/>
+<entry
+   committed-rev="397"
+   name="BRadioGroup.h"
+   text-time="2007-12-29T08:50:56.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="8c04d385962e6753d83fc6ce72b282c8"
+   last-author="bjoern"
+   kind="file"/>
+<entry
+   committed-rev="397"
+   name="BEvent.h"
+   text-time="2007-12-29T08:50:56.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="3eda3ce51d7c94377931580b7a156ee3"
+   last-author="bjoern"
+   kind="file"/>
+<entry
+   committed-rev="397"
+   name="BScrollable.h"
+   text-time="2007-12-29T08:50:56.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="7e8c4cc862cbfa78202b6274bdffd81b"
+   last-author="bjoern"
+   kind="file"/>
+<entry
+   committed-rev="397"
+   name="BGUI.h"
+   text-time="2007-12-29T08:50:56.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="9e597c185560ec44683091446614a88b"
+   last-author="bjoern"
+   kind="file"/>
+<entry
+   committed-rev="397"
+   name="BTabbedWidget.h"
+   text-time="2007-12-29T08:50:56.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="fe6d4323f02fe65f7ea2f36b47297c17"
+   last-author="bjoern"
+   kind="file"/>
+<entry
+   committed-rev="397"
+   name="BScroller.h"
+   text-time="2007-12-29T08:50:56.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="e5dc001cbeb6479c33f3c6e889d0a739"
+   last-author="bjoern"
+   kind="file"/>
+<entry
+   committed-rev="397"
+   name="BStringUtils.h"
+   text-time="2007-12-29T08:50:56.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="f91d38c13fa78a2c7af3365b9b2f31e2"
+   last-author="bjoern"
+   kind="file"/>
+<entry
+   committed-rev="397"
+   name="BIPCCodes.h"
+   text-time="2007-12-29T08:50:56.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="a42ddc35699576a98071d9bf43a0008f"
+   last-author="bjoern"
+   kind="file"/>
+<entry
+   committed-rev="397"
+   name="BOnScreenKeyboard.h"
+   text-time="2007-12-29T08:50:56.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="6ac0bcd0a3c961027b81de8ca7df4c15"
+   last-author="bjoern"
+   kind="file"/>
+<entry
+   committed-rev="397"
+   name="BRunLoop.h"
+   text-time="2007-12-29T08:50:56.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="6d6325c56e7ab62a0867a558c851835b"
+   last-author="bjoern"
+   kind="file"/>
+<entry
+   committed-rev="397"
+   name="BDialog.h"
+   text-time="2007-12-29T08:50:56.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="918cb7fb29721ae7db655e27646bf615"
+   last-author="bjoern"
+   kind="file"/>
+<entry
+   committed-rev="397"
+   name="BKeyboard.h"
+   text-time="2007-12-29T08:50:56.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="6073216bb9025a9b072b95e76c886f8e"
+   last-author="bjoern"
+   kind="file"/>
+<entry
+   committed-rev="397"
+   name="BGraphics.h"
+   text-time="2007-12-29T08:50:56.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="79104e2c08861c4764386117b38f0a84"
+   last-author="bjoern"
+   kind="file"/>
+<entry
+   committed-rev="397"
+   name="BFontManager.h"
+   text-time="2007-12-29T08:50:56.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="9125718281567cbd6c9b045d1f7250bb"
+   last-author="bjoern"
+   kind="file"/>
+<entry
+   committed-rev="397"
+   name="BTheme.h"
+   text-time="2007-12-29T08:50:56.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="b3d93c0588b5a932196090f5275f4a0d"
+   last-author="bjoern"
+   kind="file"/>
+<entry
+   committed-rev="397"
+   name="doc_mainpage.h"
+   text-time="2007-12-29T08:50:56.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="d5dbce3d1605208e44c77813ae3a9846"
+   last-author="bjoern"
+   kind="file"/>
+<entry
+   committed-rev="397"
+   name="BFont.h"
+   text-time="2007-12-29T08:50:56.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="c8c05be76e9503a1779170358721df1c"
+   last-author="bjoern"
+   kind="file"/>
+<entry
+   committed-rev="397"
+   name="BButton.h"
+   text-time="2007-12-29T08:50:56.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="65ae7f89fce854e9270fa6d4b97b75cc"
+   last-author="bjoern"
+   kind="file"/>
+<entry
+   committed-rev="397"
+   name="BAnimation.h"
+   text-time="2007-12-29T08:50:56.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="3db2e77526006de7be3a20011361a7a9"
+   last-author="bjoern"
+   kind="file"/>
+<entry
+   committed-rev="397"
+   name="BScreen.h"
+   text-time="2007-12-29T08:50:56.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="0d3bf6addf986946bd95d7b903b460a9"
+   last-author="bjoern"
+   kind="file"/>
+<entry
+   committed-rev="397"
+   name="BLabel.h"
+   text-time="2007-12-29T08:50:56.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="b5932f7d73e19319dd5494f575712e86"
+   last-author="bjoern"
+   kind="file"/>
+<entry
+   committed-rev="397"
+   name="BFileSelector.h"
+   text-time="2007-12-29T08:50:56.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="d967e3ce40977ab98ae10520790d883b"
+   last-author="bjoern"
+   kind="file"/>
+<entry
+   committed-rev="397"
+   name="BImage.h"
+   text-time="2007-12-29T08:50:56.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="3f4be89ff1604e1419d47e256c1b4fcc"
+   last-author="bjoern"
+   kind="file"/>
+<entry
+   committed-rev="397"
+   name="BWidget.h"
+   text-time="2007-12-29T08:50:56.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="b245490576a9bb6d26ec48ed62282b63"
+   last-author="bjoern"
+   kind="file"/>
+<entry
+   committed-rev="397"
+   name="BText.h"
+   text-time="2007-12-29T08:50:56.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="7e65b4f545cea6ce99969898ef5025d1"
+   last-author="bjoern"
+   kind="file"/>
+<entry
+   committed-rev="397"
+   name="BListbox.h"
+   text-time="2007-12-29T08:50:56.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="fc0ce2b0166f9dd6608d0a8c1dab04fc"
+   last-author="bjoern"
+   kind="file"/>
+<entry
+   committed-rev="397"
+   name="BVirtualFile.h"
+   text-time="2007-12-29T08:50:56.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="850929f9ee351a12bb54d12ed1596cfb"
+   last-author="bjoern"
+   kind="file"/>
+</wc-entries>

@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		<title>Microsoft Fonts on Linux</title>
+		<style type="text/css">
+
+	.headTitle {
+		font-family: Verdana, Helvetica, Lucida, Arial;
+		font-size: 11px;
+		font-weight: bold;
+		text-align: right;
+		vertical-align: top;
+	}
+
+	.nameHeading {
+		font-family: Verdana, Helvetica, Lucida, Arial;
+		font-size: 34px;
+		font-weight: bold;
+		text-decoration: underline;
+		text-align: center;
+		color: #ff6600;
+	}
+
+	h1 {
+		font-family: Verdana, Helvetica, Lucida, Arial;
+		font-size: 22px;
+		font-weight: bold;
+		color: #ff6600;
+	}
+
+	h2 {
+		font-family: Verdana, Helvetica, Lucida, Arial;
+		font-size: 18px;
+		font-weight: bold;
+		margin-top:30px;
+		color: #ff6600;
+	}
+
+	h3 {
+		font-family: Verdana, Helvetica, Lucida, Arial;
+		font-size: 16px;
+		font-weight: bold;
+		color: #ff6600;
+	}
+
+	body {
+		font-family: Verdana, Helvetica, Lucida, Arial;
+		font-size: 11px;
+		margin-left: 25pt;
+		margin-right: 25pt;
+	}
+
+	p {
+		text-align: justify;
+	}
+
+	A:link {
+		color: blue;
+		border-style: none;
+		border-width: 0pt;
+	}
+
+	A:active {
+		color: blue;
+		border-style: none;
+		border-width: 0pt;
+	}
+
+	A:visited {
+		color: #3355cc;
+		text-decoration: none;
+		border-style: none;
+		border-width: 0pt;
+	}
+
+	A:hover {
+		color: #4477cc;
+		text-decoration: underline;
+		text-weight: bold;
+		border-style: none;
+		border-width: 0pt;
+	}
+
+		</style>
+	</head>
+	<body>
+		<h1>Microsoft Fonts on Linux</h1>
+		<h2>Purpose</h2>
+		<p>It is a fact that Linux lacks good high quality fonts for general use. In the other hand, Microsoft invests time and money to provide a nice and clean look and feel with high quality fonts like Verdana and Tahoma. The result of this work is found in their <a href="http://microsoft.com/typography">typography</a> web site. This is an attempt to give Linux end users a very easy way to use them, trough an RPM package.</p>
+		<p><u>These fonts are free only for who have a Microsoft Windows license</u>.</p>
+		<p>These are screenshots of some fonts included in these packages (click to enlarge):</p>
+		<p style="text-align: center;">
+		<a href="msfonts-demo.png"><img src="thumb-msfonts-demo.png" width="131" height="79" alt="msfonts" border="0"/></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="msfonts-style-demo.png"><img src="thumb-msfonts-style-demo.png" width="119" height="79" alt="msfonts-style" border="0"/></a>
+		</p>
+		<p>These fonts area also excelent for international text, as you can see in the screenshots:</p>
+		<p style="text-align: center;">
+		<a href="hebrew.png"><img src="thumb-hebrew.png" alt="Hebrew KCharSelect" width="139" height="79" border="0"/></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="orient.png"><img src="thumb-orient.png" alt="Oriental KCharSelect" width="139" height="79" border="0"/></a>
+		</p>
+
+
+		<h2>Installing</h2>
+		<p>The fonts are divided in 2 subpackages: <b>msfonts</b> and <b>msfonts-style</b>. You can <a href="http://avi.alkalay.net/software/msfonts/download/">download the RPM packages from here</a>.</p>
+		<p>The first contains the basic fonts like Verdana, Tahoma, Arial etc, to be used in KDE and Gnome widgets and web surfing. The second has more fancy fonts for advanced document creation.</p>
+		<p>They are built for Red Hat 8.0 and 7.x systems, but should work also in Red Hat derivated distros like <a href="http://www.conectiva.com/">Conectiva</a>, <a href="http://www.mandrakesoft.com/">Mandrake</a>, etc. The installation is as simple as installing a package:</p>
+		<tt>
+			bash# rpm -Uvh msfonts-*.rpm
+		</tt>
+		<p>And you can start using your fonts. You don't have to reboot, restart XWindow or re-logon.</p>
+		<p>There are some reports this RPMs are also plug-and-play on <a href="http://www.suse.com/">SuSE</a>, so they should go OK also in <a href="http://www.unitedlinux.com/">UnitedLinux</a>. Any news about those distros, <a href="mailto:avi@unix.sh">please contribute</a>.</p>
+
+		<h2>Getting the Most From Your Fonts</h2>
+		<p>The most important fonts included in this package are:
+			<ul>
+				<li><b>Tahoma:</b> For KDE and Gnome widgets, buttons, menus, etc</li>
+				<li><b>Verdana:</b> For fluent text, web surfing, etc</li>
+			</ul>
+		</p>
+		<p>Some fonts like <i>Times New Roman</i> and <i>Arial</i> are also included, but since Tahoma and Verdana era, they are usefull only in specific situations.</p>
+
+		<h3>Setting the Widgets and General Fonts</h3>
+		<p>I personally don't like anti-aliased font rendering. I think they are usefull only for some fluent text reading situations, when you have bad fonts, or a bad screen. With these high-quality fonts you'll not need anti-aliased.</p>
+		<p>Also, Red Hat 8.0 seems to have a bug in font rendering caused by Xft. To disable it in KDE, you can use the <b><tt>qtconfig</tt></b> program, go to the <b>Fonts</b> tab, and unselect <b><tt>Enable Anti-Aliased Font Support (Xft)</tt></b>.</p>
+		<p>Next step is to setup the widgets look and feel. I like it in the most clean way, also used by MS-Windows. In KDE you do that using the <i>KDE Control Center</i>, <i>Look &amp; Feel</i> section, and then <i>Fonts</i>. This is what I have in my system:</p>
+		<p style="text-align: center;"><img src="kdeconf.png" alt="KDE Font Configuration" width="501" height="356" border="0"/></p>
+
+		<h3>Setting Browser Fonts</h3>
+		<p>For my superclean purposes I used Verdana agressively everywhere I can. This is what I have in my Konqueror settings:</p>
+		<p style="text-align: center;"><img src="konqconf.png" alt="Konqueror Font Configuration" width="564" height="528" border="0"/></p>
+		<p>Pay attention in the font sizes I use, and that Verdana is almost everywhere.</p>
+		<p>I don't use to use Mozilla but I set its font configuration almosts the same:</p>
+		<p style="text-align: center;"><img src="mozconf.png" alt="Mozilla Font Configuration" width="626" height="457" border="0"/></p>
+		<hr/>
+		<p>Copyright Avi Alkalay &lt;avi at unix.sh&gt;</p>
+
+	</body>
+</html>

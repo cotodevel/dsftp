@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="397"
+   name=""
+   committed-date="2007-12-29T09:16:18.023823Z"
+   url="svn+ssh://giesler.biz/Users/Shared/Subversion/Bjoern/NintendoDS/DSGUI/release-0.3/fonts/webcore-fonts"
+   last-author="bjoern"
+   kind="dir"
+   uuid="cf5e7cae-daff-0310-bc88-a7f70dbeb50a"
+   revision="397"/>
+<entry
+   name="doc"
+   kind="dir"/>
+<entry
+   committed-rev="397"
+   name="webcore-fonts.spec"
+   text-time="2007-12-29T08:50:59.000000Z"
+   committed-date="2007-12-29T09:16:18.023823Z"
+   checksum="8ddb2e2267b63db0e27ef0c1dd502eb7"
+   last-author="bjoern"
+   kind="file"
+   prop-time="2007-12-29T08:50:58.000000Z"/>
+<entry
+   name="fonts"
+   kind="dir"/>
+</wc-entries>
