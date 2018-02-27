@@ -1,4 +1,4 @@
-compiles under devkitpro r43
+compiles under devkitarm r43
 
 includes:
 DSFTP sources
