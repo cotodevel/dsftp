@@ -19,12 +19,12 @@ DSFTPPATH := ../../libDSFTP
 BUILD		:=	build
 INCLUDES	:=	$(DSFTPPATH)/include	\
 				source	\
-				source/dsgui-0.3/include	\
+				../common/dsgui-0.3/include	\
 				source/touch_ipc	\
 				../common
 SOURCES		:=	include	\
 				source	\
-				source/dsgui-0.3/source		\
+				../common/dsgui-0.3/source	\
 				source/touch_ipc	\
 				../common
 DATA		:=	data

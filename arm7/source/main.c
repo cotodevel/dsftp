@@ -21,7 +21,7 @@
 
 #include <dswifi7.h>
 
-//#include <BIPCCodes.h>
+#include <BIPCCodes.h>
 #include "pm.h"
 #include "touch.h"
 #include "ipc_libnds_extended.h"

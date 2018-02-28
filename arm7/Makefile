@@ -19,6 +19,7 @@ SOURCES		:=	source  \
 				../common
 INCLUDES	:=	include \
 				build	\
+				../common/dsgui-0.3/include	\
 			../common/
 DATA		:=
  

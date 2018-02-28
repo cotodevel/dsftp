@@ -18,6 +18,7 @@
 
 /* my includes */
 #include "pm.h"
+#include <BIPCCodes.h>
 
 static u8 pmGetRegister(int reg)
 {

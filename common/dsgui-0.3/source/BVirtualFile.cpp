@@ -262,23 +262,16 @@ BFileManager::directoryContents(const std::string& dir)
 		return retval;
 	}
 	
-	char lfn[1024];
-	struct stat statbuf;
-	
 	while ((pent=readdir(pdir))!=NULL) {
-		memset(lfn, 0, 1024);
-		memset(&statbuf, 0, sizeof(struct stat));
-		if(strcmp(".", pent->d_name) == 0 || strcmp("..", pent->d_name) == 0)
-			continue;
-		
+		char lfn[1024] = {0};
 		sprintf(lfn,"%s",pent->d_name);
 		ft.filename = lfn;
-		
-		if(pent->d_type == DT_DIR)
+		if(pent->d_type == DT_DIR){
 			ft.filetype = TYPE_DIRECTORY;
-		else 
+		}
+		else{
 			ft.filetype = TYPE_FILE;
-
+		}
 		retval.push_back(ft);
 	}
 	closedir(pdir);

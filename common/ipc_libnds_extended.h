@@ -102,18 +102,6 @@ typedef struct sMyIPC {
 //tell BGUI lib we use libfat
 #define FAT_libfat
 
-#define IPC_OK	0x123
-#define IPC_WIFI_SYNC	0x124
-#define IPC_BACKLIGHT	0x125
-#define IPC_GET	0x126
-#define IPC_BACKLIGHT_TOP	0x127
-#define IPC_BACKLIGHT_BOTTOM	0x128
-#define IPC_BRIGHTNESS	0x129
-#define IPC_POWEROFF	0x12a
-#define IPC_WIFI_INIT	0x12b
-#define PM_POWER_DOWN	0x12c
-
-
 #endif
 
 #ifdef __cplusplus
