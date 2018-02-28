@@ -45,7 +45,7 @@ void arm7_fifo()
   // check incoming fifo messages
   u32 msg = REG_IPC_FIFO_RX;
   bool top, bottom;
-  switch(msg)
+  switch(IPC_COMMAND(msg))
     {
     case IPC_WIFI_SYNC:
       Wifi_Sync();
@@ -53,7 +53,7 @@ void arm7_fifo()
       break;
 
     case IPC_BACKLIGHT:
-      if(msg != IPC_GET)
+      if(IPC_ARG(msg) != IPC_GET)
 	pmSwitchBacklight(msg & IPC_BACKLIGHT_TOP,
 			  msg & IPC_BACKLIGHT_BOTTOM);
       pmGetBacklight(&top, &bottom);
@@ -63,8 +63,8 @@ void arm7_fifo()
       break;
       
     case IPC_BRIGHTNESS:
-      if(msg != IPC_GET)
-	pmSetBacklightBrightness(msg);
+      if(IPC_ARG(msg) != IPC_GET)
+	pmSetBacklightBrightness(IPC_ARG(msg));
       REG_IPC_FIFO_TX = IPC_OK | pmGetBacklightBrightness();
       break;
       
