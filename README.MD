@@ -1,31 +1,27 @@
-compiles under devkitarm r43
+Compiles under devkitarm r43.
 
-howto:
-head to /bin folder and copy all contents in SD root, then run dsftp.nds
+Howto (user):	
+- head to /bin folder 
+- and copy all contents in SD root, then run dsftp.nds
 
-user/passwords:
-read-only
-user: anonymous
-pass:
+FTP User/passwords:
+Read-only:
+- user: anonymous
+- pass:
 
-read/write
-user: nds
-pass: nds
+Read/Write
+- user: nds
+- pass: nds
 
-includes:
-DSFTP sources
-precompiled shared libraries
-DSGUI (a DSFTP library)
+Misc:
+- Force the GCC compiler to use standard C++ and not C++11, otherwise code can´t link against shared libraries.
+- IIRC the author said the code could not be hosted anywhere else than his website. But it´s been like 12 years, and his site his gone.
 
-changes:
-force the GCC compiler to use standard C++ and not C++11, otherwise code can´t link against shared libraries.
+Sourcecode Contents:
+- DSFTP sources
+- Precompiled shared libraries
+- DSGUI (a DSFTP library)
 
-bug:
-revise fat driver, since the FTP directory listing will throw random folders instead actual files from SD card. 
-But the heavy-lifting work is done at least hehe
-
-notes:
-IIRC the author said the code could not be hosted anywhere else than his website. But it´s been like 12 years, and his site his gone.
 
 Coto
 
