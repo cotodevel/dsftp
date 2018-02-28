@@ -18,16 +18,15 @@ DSFTPPATH := ../../libDSFTP
 #---------------------------------------------------------------------------------
 BUILD		:=	build
 INCLUDES	:=	$(DSFTPPATH)/include	\
-				source/touch_ipc	\
 				source	\
 				source/dsgui-0.3/include	\
-				../common	\
-				../../common				
-SOURCES		:=	source/touch_ipc	\
+				source/touch_ipc	\
+				../common
+SOURCES		:=	include	\
 				source	\
 				source/dsgui-0.3/source		\
-				../common	\
-				../../common
+				source/touch_ipc	\
+				../common
 DATA		:=	data
 
 #---------------------------------------------------------------------------------
