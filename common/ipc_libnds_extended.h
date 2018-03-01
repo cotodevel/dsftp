@@ -71,7 +71,6 @@ typedef struct sMyIPC {
     u8 status; //see processor ipc read/writes flags
     u32 buf_queue[0x10];
 	
-  
 } tMyIPC;
 
 //Shared Work     027FF000h 4KB    -     -    -    R/W
@@ -86,6 +85,19 @@ typedef struct sMyIPC {
 #define KEY_XARM7 (1<<0)
 #define KEY_YARM7 (1<<1)
 #define KEY_HINGE (1<<7)
+
+/*
+#define TSC_MEASURE_TEMP1    0x84
+//#define TSC_MEASURE_Y        0x91
+#define TSC_MEASURE_BATTERY  0xA4
+//#define TSC_MEASURE_Z1       0xB1
+//#define TSC_MEASURE_Z2       0xC1
+//#define TSC_MEASURE_X        0xD1
+//#define TSC_MEASURE_AUX      0xE4
+#define TSC_MEASURE_TEMP2    0xF4
+
+
+*/
 
 #ifdef ARM7
 #define 	BIOS_IRQFLAGS   *(__irq_flags)
@@ -108,12 +120,13 @@ typedef struct sMyIPC {
 extern "C" {
 #endif
 
-extern void sendbyte_ipc(uint8 word);
-extern u8 recvbyte_ipc();
+#ifdef ARM7
+//keys / touch arm7
+extern void extendedIPC();
+#endif
 
-//direct
-extern u32 read_ext_cpu(u32 address,u8 read_mode);
-extern void write_ext_cpu(u32 address,u32 value,u8 write_mode);
+extern tMyIPC * getIPC();
+extern u32 getKeys();
 
 //gbaemu4ds clock opcodes
 extern u8 ipc_get_yearbytertc();

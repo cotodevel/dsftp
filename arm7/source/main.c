@@ -23,13 +23,12 @@
 
 #include <BIPCCodes.h>
 #include "pm.h"
-#include "touch.h"
 #include "ipc_libnds_extended.h"
 
 void VblankHandler(void)
 {
-  updateMyIPC();
-  Wifi_Update(); // update wireless in vblank
+	extendedIPC();
+	Wifi_Update(); // update wireless in vblank
 }
 
 // callback to allow wifi library to notify arm9

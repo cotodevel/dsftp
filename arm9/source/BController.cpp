@@ -508,8 +508,7 @@ void BController::run()
   LOG(LOG_INFO, "Press A+B+X+Y for safe poweroff.");
 
   irqEnable(IRQ_VBLANK);
-  scanKeys();
-  uint32 buttons = keysHeld();
+  uint32 buttons = getKeys();
 
   while(true)
     {
@@ -525,8 +524,7 @@ void BController::run()
       
       if(!ssaverOn) updateStatus();
       
-      scanKeys();
-      uint32 tmpbuttons = keysHeld();
+      uint32 tmpbuttons = getKeys();
       if(tmpbuttons & KEY_LID)
 	{
 	  setScreenSaver(true);

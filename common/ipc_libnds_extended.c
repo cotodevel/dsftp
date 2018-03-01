@@ -1,76 +1,88 @@
 #include "ipc_libnds_extended.h"
+
 #include <nds.h>
+#include <nds/ndstypes.h>
+#include <nds/system.h>
+#include <nds/input.h>
+#include <nds/interrupts.h>
+
+#include <nds/bios.h>
+#include <nds/ipc.h>
+#include <stdlib.h>
 
 
 #ifdef ARM7
-void SendArm9Command(u32 command1, u32 command2, u32 command3, u32 command4) {
+#include <nds/arm7/clock.h>
+#include <nds/arm7/touch.h>
+
+//coto: original libnds touchscreen usage.
+void extendedIPC()
+{
+	uint16 but=0, batt=0;
+	int t1=0, t2=0;
+	uint32 temp=0;
+	u8 clock_buf[sizeof(MyIPC->clockdata)];
+	u32 i;
+	
+    touchPosition tempPos;
+    touchReadXY(&tempPos);
+     
+	// Read the touch screen
+	but = REG_KEYXY;
+	batt = touchRead(TSC_MEASURE_BATTERY);
+ 
+	// Read the time
+	//rtcGetTime((uint8 *)clock_buf);
+	//BCDToInteger((uint8 *)&(ct[1]), 7);
+	
+	// Read the time
+	rtcGetTimeAndDate(clock_buf);
+	
+	// Read the temperature
+	temp = touchReadTemperature(&t1, &t2);
+ 
+	// Update the MyIPC struct
+	MyIPC->buttons	            	= REG_KEYINPUT;
+    MyIPC->buttons_xy_folding		= but;
+	MyIPC->touched                  = (u8)CheckStylus();
+    MyIPC->touch_pendown           = (u8)touchPenDown();
+    
+    //raw x/y
+    MyIPC->touchX    = tempPos.rawx;
+    MyIPC->touchY    = tempPos.rawy;
+    
+    //TFT x/y pixel
+    MyIPC->touchXpx = tempPos.px;
+    MyIPC->touchYpx = tempPos.py;    
+    
+	MyIPC->touchZ1 = tempPos.z1;
+	MyIPC->touchZ2 = tempPos.z2;
+	MyIPC->battery		= batt;
+ 
+	//Get time
+    for(i=0; i< sizeof(clock_buf); i++){
+        MyIPC->clockdata[i] = clock_buf[i];
+    }
+ 
+	MyIPC->temperature = temp;
+	MyIPC->tdiode1 = t1;
+	MyIPC->tdiode2 = t2;	
+}
 #endif
 
-#ifdef ARM9
-__attribute__((section(".itcm")))
-void SendArm7Command(u32 command1, u32 command2, u32 command3, u32 command4) {
-#endif
-    
-    REG_IPC_FIFO_TX = (u32)command1;
-    REG_IPC_FIFO_TX = (u32)command2;
-    REG_IPC_FIFO_TX = (u32)command3;
-    REG_IPC_FIFO_TX = (u32)command4;
-    
+tMyIPC * getIPC(){
+	return (tMyIPC *)MyIPC;
 }
 
-
-//NDS hardware IPC
-void sendbyte_ipc(uint8 word){
-	//checkreg writereg (add,val) static int REG_IPC_add=0x04000180,REG_IE_add=0x04000210,REG_IF_add=0x04000214;
-	*((u32*)0x04000180)=((*(u32*)0x04000180)&0xfffff0ff) | (word<<8);
+//arm7 / arm9 shared:
+//usage: if(getKeys() & KEY_L) ...
+u32 getKeys(){
+	tMyIPC * IPCInst = getIPC();
+	return (( ((~REG_KEYINPUT)&0x3ff) | (((~IPCInst->buttons_xy_folding)&3)<<10) | (((~IPCInst->buttons_xy_folding)<<6) & (KEY_TOUCH|KEY_LID) ))^KEY_LID);
 }
 
-u8 recvbyte_ipc(){
-	return ((*(u32*)0x04000180)&0xf);
-}
+//keys
 
-//coto: in case you're wondering, these opcodes allow to reach specific region memory that is not available from the other core.
-
-// u32 address, u8 read_mode (0 : u32 / 1 : u16 / 2 : u8)
-#ifdef ARM9
-__attribute__((section(".itcm")))
-#endif
-inline u32 read_ext_cpu(u32 address,u8 read_mode){
-    #ifdef ARM7
-        MyIPC->status |= ARM9_BUSYFLAGRD;
-        SendArm9Command(0xc2720000, address, read_mode,0x00000000);
-        while(MyIPC->status & ARM9_BUSYFLAGRD){}
-    #endif
-        
-    #ifdef ARM9
-        MyIPC->status |= ARM7_BUSYFLAGRD;
-        SendArm7Command(0xc2720000, address, read_mode,0x00000000);
-        while(MyIPC->status & ARM7_BUSYFLAGRD){}
-    #endif
-    
-    return (u32)MyIPC->buf_queue[0];
-}
-
-//Direct writes: Write ARMx<->ARMx opcodes:
-// u32 address, u8 write_mode (0 : u32 / 1 : u16 / 2 : u8)
-#ifdef ARM9
-__attribute__((section(".itcm")))
-#endif
-inline void write_ext_cpu(u32 address,u32 value,u8 write_mode){
-
-    #ifdef ARM7
-        MyIPC->status |= ARM9_BUSYFLAGWR;
-        SendArm9Command(0xc2720001, address, write_mode, value);
-        while(MyIPC->status& ARM9_BUSYFLAGWR){}
-    #endif
-        
-    #ifdef ARM9
-        MyIPC->status |= ARM7_BUSYFLAGWR;
-        SendArm7Command(0xc2720001, address, write_mode, value);
-        while(MyIPC->status& ARM7_BUSYFLAGWR){}
-    #endif
-    
-}
 
 //clock opcodes
 u8 ipc_get_yearbytertc(){
